@@ -2,7 +2,7 @@
 A Python library and its cli for converting grabcraft to schema (more specifically litematica schematic) files
 
 To use the CLI run `cli.py` (It is also an example of how to use `RenderObject` class). Two command line arguments are expected:
-- Original orientation of the structure in the blueprint; must one of the 4 keywords - 'north', 'south', 'east' or 'west'. See details below.
+- Original orientation of the structure in the blueprint; must be one of the 4 keywords - 'north', 'south', 'east' or 'west'. See details below.
 - URL of the blueprint's page on the GrabCraft site
 
 Upon succesful conversion CLI will output 2 files:
