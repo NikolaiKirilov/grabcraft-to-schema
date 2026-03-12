@@ -24,7 +24,7 @@ Technically it is possible to extract compass info from the webpage data automat
 
 ## Current Limitations:
 As I only tested this on builds that I'm interested in personally, the library should not be expected to handle every single build offered by GrabCraft. If a structure cannot be converted properly it is likely due to one the following reasons:
-- The block has not been seen before and is not present in the block mapping file `blockmap.csv`. There is a piece of code in the library to try and guess the block's identity but it is disabled for now. The success is not guaranteed and reconstructing the block states from the GrabCraft's free-form naming is practically impossible. Currently if an unknown block is encountered, the library stops processing and exits. The name of the block and possible candidate for the official block ID are displayed on exit. Try to add them to `blockmap.csv` and run CLI again.
+- A block has not been seen before and is not present in the block mapping file `blockmap.csv`. There is a piece of code in the library to try and guess the block's identity but it is disabled for now. The success is not guaranteed and reconstructing the block states from the GrabCraft's free-form naming is practically impossible. Currently if an unknown block is encountered, the library aborts the processing and exits. The name of the block and possible candidate for the official block ID are displayed on exit. Try to add them to `blockmap.csv` and run CLI again.
 - Even though present in `blockmap.csv`, many blocks are still missing neccessary states info and, when imported into Minecraft world, might be oriented wrongly, dropped as items and such.
 
 ## Documentation:
