@@ -1,11 +1,11 @@
 # grabcraft-to-schema
 A Python library and its cli for converting grabcraft to schema (more specifically litematica schematic) files
 
-To use the CLI run `cli.py` (It is also an example of how to use `RenderObject` class).Two command line arguments are expected:
+To use the CLI run `cli.py` (It is also an example of how to use `RenderObject` class). Two command line arguments are expected:
 - Original orientation of the structure in the blueprint; must one of the 4 keywords - 'north', 'south', 'east' or 'west'. See details below.
 - URL of the blueprint's page on the GrabCraft site
 
-Upon sussesful conversion CLI will output 2 files:
+Upon succesful conversion CLI will output 2 files:
 - a schema file in litematica format
 - a text file with essential info about the structure, a list (histogram) of the blocks in GrabCraft format and a list of "materials" needed for the build.
 
@@ -13,8 +13,10 @@ Upon sussesful conversion CLI will output 2 files:
 GrabCraft, instead of using things like .schematic or .litematic uses its own custom format called RenderObjects. If you're for instance, scraping the web and don't know what data you need to keep or generally want to be able to do stuff without having to worry about certain stuff breaking when dealing with GrabCraft's custom format, I recommend that you guys try to save `RenderObject`'s and their data. The `RenderObject.obj` field is what contains most of the data, which can easily be converted to a json as seen in the library itself since it's just a variable being set to a javascript dictionary which means that it's a json as soon as the javascript variable setting part is removed.
 
 ## Orientation
-By the looks of it, orientation of each block is kept as it was in the original build from which the blueprint was created. On the other hand, blueprint itself is often re-oriented (publishing guidelines?) and coordinates for each block are assigned according to their location in the published blueprint. If blocks are positioned in a Minecraft world according to those coordinates, the structure will be oriented such that bottom side of the blueprint is facing north. If the orientation of the original build was different, all the individual blocks will be facing the wrong direction.\
-In order to have each block oriented correctly relative to the build, the library transforms the coordinates specified in the blueprint back to the coordinates of original build. The original orientation of the build is given by the compass in the upper right corner of the blueprint. The first argument to CLI must be the cardinal direction displayed for the compass arrow pointing down (toward the bottom of the blueprint).\
+By the looks of it, orientation of each block is kept as it was in the original build from which the blueprint was created. On the other hand, blueprint itself is often re-oriented (publishing guidelines?) and coordinates for each block are assigned according to their location in the published blueprint. If blocks are positioned in a Minecraft world according to those coordinates, the structure will be oriented such that bottom side of the blueprint is facing north. If the orientation of the original build was different, all the individual blocks will be facing the wrong direction.
+
+In order to have each block oriented correctly relative to the build, the library transforms the coordinates specified in the blueprint back to the coordinates of original build. The original orientation of the build is given by the compass in the upper right corner of the blueprint. The first argument to CLI must be the cardinal direction displayed for the compass arrow pointing down (toward the bottom of the blueprint).
+
 Technically it is possible to extract compass info from the webpage data automatically but compass itself is unreliable. There are cases where blocks orientation does not match the compass, e.g. [Small Wooden Cabin 4](https://www.grabcraft.com/minecraft/simple-starter-house-2/wooden-houses#blueprints). I might still make it automatic later anyway, with optional override.
 
 ## Block Mapping File
