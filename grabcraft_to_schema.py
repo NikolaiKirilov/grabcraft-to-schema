@@ -28,7 +28,7 @@ def auto_block_map(grabcraft_block):
     return f"minecraft:{ schema_block }"
 
 class RenderObject:
-    def __init__(self, url, north='north', block_map_file="blockmap.csv"):
+    def __init__(self, url, north='north', block_map_file="blockmap.csv", dump=False):
         # Load the block map of predefined blocks
         self.block_map = {}
         with open(block_map_file, 'r') as f:
@@ -45,8 +45,9 @@ class RenderObject:
 
         # Getting the webpage itself
         res = requests.get(self.url).text
-        with open("dump_page.html", "w", encoding='utf-8') as f:
-            f.write(res)
+        if (dump):
+            with open("dump_page.html", "w", encoding='utf-8') as f:
+                f.write(res)
 
         # The index for the renderObject's info
         render_object_i = res.find("myRenderObject")
@@ -93,8 +94,9 @@ class RenderObject:
         ro_text = ro_js[ro_js.find('{'):]
         # Convert it to a json
         ro_json = json.loads(ro_text)
-        with open("dump_RenderObject.json", "w") as f:
-            json.dump(ro_json, f, sort_keys=True, indent=4)
+        if dump:
+            with open("dump_RenderObject.json", "w") as f:
+                json.dump(ro_json, f, sort_keys=True, indent=4)
 
         # Unpack json into a flat list of blocks
         def json_iter(tree):

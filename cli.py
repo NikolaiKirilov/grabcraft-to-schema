@@ -1,10 +1,21 @@
-import sys, json
+import sys, json, argparse
 from collections import defaultdict
 from grabcraft_to_schema import RenderObject
 
+parser = argparse.ArgumentParser(prog='cli', description="Download a blueprint from GrabCraft and convert it to a schematic in litematica format")
+parser.add_argument('--version', action='version', version='%(prog)s v1.00')
+parser.add_argument('url', help="URL of the blueprint's page on GrabCraft website")
+parser.add_argument('-f', choices= ['north', 'south', 'east', 'west'],
+                          default = 'north',
+                          help="side of the original build facing the bottom of the GrabCraft blueprint")
+parser.add_argument('-d', action='store_true',
+                          help="dump the contents of the webpage and RenderObject json to a file")
+
+args = parser.parse_args()
+
+
 # Download render object
-north, url = sys.argv[1:]
-robj = RenderObject(url, north)
+robj = RenderObject(args.url, north=args.f, dump=args.d)
 print("Done downloading!\n")
 
 # Convert render object to MC schema
