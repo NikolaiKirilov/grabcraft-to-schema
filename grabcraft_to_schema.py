@@ -106,6 +106,15 @@ class RenderObject:
                         yield data
         self.blocks = [(d["name"].strip(), int(d['x']), int(d['y']), int(d['z'])) for d in json_iter(ro_json)]
 
+        # verify build's dimensions
+        max_x = max(d[1] for d in self.blocks)
+        max_y = max(d[2] for d in self.blocks)
+        max_z = max(d[3] for d in self.blocks)
+        max_dims = max_x, max_y, max_z
+        if self.dims != max_dims:
+            print("Dimensions updated:", self.dims, "->", max_dims)
+            self.dims = max_dims
+
     def map_xz(self, x, z):
         match self.north:
             case "north":
