@@ -33,12 +33,12 @@ class RenderObject:
         self.block_map = {}
         with open(block_map_file, 'r') as f:
             reader = csv.reader(f)
-            i = 0
+            header = True
             for row in reader:
-                i += 1
-                if i == 0:
+                if header:
+                    header = False
                     continue
-                self.block_map[row[1]] = row[2:]
+                self.block_map[(int(row[0]), row[1])] = row[2:]
 
         self.url = url[:url.find('#')] + "#general"
         self.north = north.lower()
@@ -104,12 +104,12 @@ class RenderObject:
                 for y, z in yz.items():
                     for _, data in z.items():
                         yield data
-        self.blocks = [(d["name"].strip(), int(d['x']), int(d['y']), int(d['z'])) for d in json_iter(ro_json)]
+        self.blocks = [(int(d['mat_id']), d["name"].strip(), int(d['x']), int(d['y']), int(d['z'])) for d in json_iter(ro_json)]
 
         # verify build's dimensions
-        max_x = max(d[1] for d in self.blocks)
-        max_y = max(d[2] for d in self.blocks)
-        max_z = max(d[3] for d in self.blocks)
+        max_x = max(d[2] for d in self.blocks)
+        max_y = max(d[3] for d in self.blocks)
+        max_z = max(d[4] for d in self.blocks)
         max_dims = max_x, max_y, max_z
         if self.dims != max_dims:
             print("Dimensions updated:", self.dims, "->", max_dims)
@@ -137,16 +137,20 @@ class RenderObject:
             case _:
                 exit(f"invalid north: '{north}'")
 
-    def map_block(self, grabcraft_block):
-        if grabcraft_block in self.block_map:
-            block = self.block_map[grabcraft_block]
-            props = dict(zip(block[1::2], block[2::2]))
-            return block[0], props
+    def map_block(self, block_id, block_name):
+        if (block_id, block_name) in self.block_map:
+            block = self.block_map[(block_id, block_name)]
+        elif (-1, block_name) in self.block_map:
+            block = self.block_map[(-1, block_name)]
         else:
-            block = auto_block_map(grabcraft_block)
-            print('"' + grabcraft_block + '"', "->", '"' + block + '"')
+            block = auto_block_map(block_name)
+            print(f'"{block_name}" ({block_id}) -> "{block}"')
             # return block
             exit()
+
+        props = dict(zip(block[1::2], block[2::2]))
+        return block[0], props
+
 
     def to_schema(self):
         # Store the dimensions
@@ -158,11 +162,11 @@ class RenderObject:
         mat_list = defaultdict(int)
 
         # Fill the region with blocks
-        for gc_block, gc_x, gc_y, gc_z in self.blocks:
+        for gc_id, gc_name, gc_x, gc_y, gc_z in self.blocks:
             schema_y = gc_y - 1
             schema_x, schema_z = self.map_xz(gc_x, gc_z)
 
-            schema_block, schema_props = self.map_block(gc_block)
+            schema_block, schema_props = self.map_block(gc_id, gc_name)
             block = BlockState(schema_block, **schema_props)
             reg.setblock(schema_x, schema_y, schema_z, block)
 

@@ -39,7 +39,7 @@ with open(out_name + ".txt", "w") as f:
     print(" -= blocks =-", file=f)
     blocks_list = defaultdict(int)
     for block in robj.blocks:
-        blocks_list[block[0]] += 1
+        blocks_list[(block[1], block[0])] += 1
     for block in sorted(blocks_list):
         print(f"{blocks_list[block]:6d}", block, file=f)
 
