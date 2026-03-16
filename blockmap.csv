@@ -1,4 +1,3 @@
-mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Acacia Door (Lower, Facing East, Closed)",minecraft:acacia_door,facing,west,open,false,half,lower
 -1,"Acacia Door (Lower, Facing East, Opened)",minecraft:acacia_door,facing,west,open,true,half,lower
 -1,"Acacia Door (Lower, Facing North, Closed)",minecraft:acacia_door,facing,south,open,false,half,lower
@@ -36,7 +35,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Activator Rail (Flat North-South, Not Active)",minecraft:activator_rail,,,,,,
 -1,"Activator Rail (Flat West-East, Not Active)",minecraft:activator_rail,,,,,,
 -1,Allium,minecraft:allium,,,,,,
--1,Andesite,minecraft:andesite,,,,,,
+13,Andesite,minecraft:andesite,,,,,,
 -1,Very Damaged Anvil (East/West),minecraft:anvil,facing,west,,,,
 -1,Very Damaged Anvil (North/South),minecraft:anvil,facing,south,,,,
 -1,Very Damaged Anvil (South/North),minecraft:anvil,facing,north,,,,
@@ -72,28 +71,28 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Birch Leaves,minecraft:birch_leaves,persistent,true,,,,
 -1,Birch Leaves (No Decay),minecraft:birch_leaves,persistent,true,,,,
 -1,Birch Leaves (No Decay and Check Decay),minecraft:birch_leaves,persistent,true,,,,
--1,Birch Wood,minecraft:birch_log,axis,y,,,,
--1,Birch Wood (facing east/west),minecraft:birch_log,axis,x,,,,
--1,Birch Wood (facing north/south),minecraft:birch_log,axis,z,,,,
+31,Birch Wood,minecraft:birch_log,axis,y,,,,
+431,Birch Wood (facing east/west),minecraft:birch_log,axis,x,,,,
+302,Birch Wood (facing north/south),minecraft:birch_log,axis,z,,,,
 -1,Birch Wood (only bark),minecraft:birch_wood,,,,,,
--1,Birch Wood Plank,minecraft:birch_planks,,,,,,
+21,Birch Wood Plank,minecraft:birch_planks,,,,,,
 -1,"Sapling (Birch, Ready to grow)",minecraft:birch_sapling,stage,0,,,,
 -1,Double Birch Wood Slab,minecraft:birch_slab,type,double,,,,
 -1,"(Birch Wood, Upper)",minecraft:birch_slab,type,top,,,,
 -1,"(Birch Wood, Bottom)",minecraft:birch_slab,type,bottom,,,,
--1,"Birch Wood Stairs (East, Normal)",minecraft:birch_stairs,half,bottom,facing,east,,
+219,"Birch Wood Stairs (East, Normal)",minecraft:birch_stairs,half,bottom,facing,east,,
 -1,"Birch Wood Stairs (East, Upside-down)",minecraft:birch_stairs,half,top,facing,east,,
--1,"Birch Wood Stairs (North, Normal)",minecraft:birch_stairs,half,bottom,facing,north,,
+441,"Birch Wood Stairs (North, Normal)",minecraft:birch_stairs,half,bottom,facing,north,,
 -1,"Birch Wood Stairs (North, Upside-down)",minecraft:birch_stairs,half,top,facing,north,,
--1,"Birch Wood Stairs (South, Normal)",minecraft:birch_stairs,half,bottom,facing,south,,
+440,"Birch Wood Stairs (South, Normal)",minecraft:birch_stairs,half,bottom,facing,south,,
 -1,"Birch Wood Stairs (South, Upside-down)",minecraft:birch_stairs,half,top,facing,south,,
--1,"Birch Wood Stairs (West, Normal)",minecraft:birch_stairs,half,bottom,facing,west,,
+439,"Birch Wood Stairs (West, Normal)",minecraft:birch_stairs,half,bottom,facing,west,,
 -1,"Birch Wood Stairs (West, Upside-down)",minecraft:birch_stairs,half,top,facing,west,,
 -1,Black Carpet,minecraft:black_carpet,,,,,,
 -1,Black Stained Glass,minecraft:black_stained_glass,,,,,,
 -1,Black Stained Glass Pane,minecraft:black_stained_glass_pane,,,,,,
 -1,Black Stained Clay,minecraft:black_terracotta,,,,,,
--1,Black Wool,minecraft:black_wool,,,,,,
+39,Black Wool,minecraft:black_wool,,,,,,
 -1,Blue Carpet,minecraft:blue_carpet,,,,,,
 -1,Blue Orchid,minecraft:blue_orchid,,,,,,
 -1,Blue Stained Glass,minecraft:blue_stained_glass,,,,,,
@@ -103,7 +102,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Bone Block (Oriented east-west),minecraft:bone_block,,,,,,
 -1,Bone Block (Oriented north-south),minecraft:bone_block,,,,,,
 -1,Bone Block (Oriented vertically),minecraft:bone_block,,,,,,
--1,Bookshelf,minecraft:bookshelf,,,,,,
+95,Bookshelf,minecraft:bookshelf,,,,,,
 -1,"Brewing Stand (Slot 1 Active, Slot 2 Active, Slot 3 Active)",minecraft:brewing_stand,has_bottle_0,true,has_bottle_1,true,has_bottle_2,true
 -1,"Brewing Stand (Slot 1 Active, Slot 2 Active, Slot 3 Unactive",minecraft:brewing_stand,has_bottle_0,true,has_bottle_1,true,,
 -1,"Brewing Stand (Slot 1 Active, Slot 2 Unactive, Slot 3 Active",minecraft:brewing_stand,has_bottle_0,true,has_bottle_2,true,,
@@ -162,10 +161,10 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Cauldron (2/3 Filled),minecraft:water_cauldron,level,2,,,,
 -1,Cauldron (Fully Filled),minecraft:water_cauldron,level,3,,,,
 -1,Chest,minecraft:chest,,,,,,
--1,Chest (East),minecraft:chest,facing,east,,,,
--1,Chest (North),minecraft:chest,facing,north,,,,
--1,Chest (South),minecraft:chest,facing,south,,,,
--1,Chest (West),minecraft:chest,facing,west,,,,
+525,Chest (East),minecraft:chest,facing,east,,,,
+522,Chest (North),minecraft:chest,facing,north,,,,
+523,Chest (South),minecraft:chest,facing,south,,,,
+524,Chest (West),minecraft:chest,facing,west,,,,
 -1,Chiseled Quartz Block,minecraft:chiseled_quartz_block,,,,,,
 -1,Chiseled Red Sandstone,minecraft:chiseled_red_sandstone,,,,,,
 -1,Double Sandstone Slab Seamless,minecraft:chiseled_sandstone,,,,,,
@@ -175,7 +174,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Block of Coal,minecraft:coal_block,,,,,,
 -1,Coal Ore,minecraft:coal_ore,,,,,,
 -1,Coarse Dirt,minecraft:coarse_dirt,,,,,,
--1,Cobblestone,minecraft:cobblestone,,,,,,
+18,Cobblestone,minecraft:cobblestone,,,,,,
 -1,Double Cobblestone Slab,minecraft:cobblestone_slab,type,double,,,,
 -1,Cobblestone (Upper),minecraft:cobblestone_slab,type,top,,,,
 -1,Cobblestone Slab,minecraft:cobblestone_slab,type,bottom,,,,
@@ -204,23 +203,23 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Redstone Comparator (Facing South, Unset, Unpowered )",minecraft:comparator,,,,,,
 -1,"Redstone Comparator (Facing West, Substraction mode, Powered",minecraft:comparator,,,,,,
 -1,Cracked Stone Bricks,minecraft:cracked_stone_bricks,,,,,,
--1,Crafting Table,minecraft:crafting_table,,,,,,
+106,Crafting Table,minecraft:crafting_table,,,,,,
 -1,Cyan Carpet,minecraft:cyan_carpet,,,,,,
 -1,Cyan Stained Glass,minecraft:cyan_stained_glass,,,,,,
 -1,Cyan Stained Glass Pane,minecraft:cyan_stained_glass_pane,,,,,,
 -1,Cyan Stained Clay,minecraft:cyan_terracotta,,,,,,
 -1,Cyan Wool,minecraft:cyan_wool,,,,,,
--1,Dandelion,minecraft:dandelion,,,,,,
--1,"Dark Oak Door (Lower, Facing East, Closed)",minecraft:dark_oak_door,half,lower,facing,west,open,false
+283,Dandelion,minecraft:dandelion,,,,,,
+1008,"Dark Oak Door (Lower, Facing East, Closed)",minecraft:dark_oak_door,half,lower,facing,west,open,false
 -1,"Dark Oak Door (Lower, Facing East, Opened)",minecraft:dark_oak_door,half,lower,facing,west,open,true
--1,"Dark Oak Door (Lower, Facing North, Closed)",minecraft:dark_oak_door,half,lower,facing,south,open,false
+1007,"Dark Oak Door (Lower, Facing North, Closed)",minecraft:dark_oak_door,half,lower,facing,south,open,false
 -1,"Dark Oak Door (Lower, Facing North, Opened)",minecraft:dark_oak_door,half,lower,facing,south,open,true
--1,"Dark Oak Door (Lower, Facing South, Closed)",minecraft:dark_oak_door,half,lower,facing,north,open,false
+1009,"Dark Oak Door (Lower, Facing South, Closed)",minecraft:dark_oak_door,half,lower,facing,north,open,false
 -1,"Dark Oak Door (Lower, Facing South, Opened)",minecraft:dark_oak_door,half,lower,facing,north,open,true
--1,"Dark Oak Door (Lower, Facing West, Closed)",minecraft:dark_oak_door,half,lower,facing,east,open,false
+1006,"Dark Oak Door (Lower, Facing West, Closed)",minecraft:dark_oak_door,half,lower,facing,east,open,false
 -1,"Dark Oak Door (Lower, Facing West, Opened)",minecraft:dark_oak_door,half,lower,facing,east,open,true
 -1,"Dark Oak Door (Upper, Hinge Left, Powered)",minecraft:dark_oak_door,half,upper,hinge,left,powered,true
--1,"Dark Oak Door (Upper, Hinge Left, Unpowered)",minecraft:dark_oak_door,half,upper,hinge,left,powered,false
+1014,"Dark Oak Door (Upper, Hinge Left, Unpowered)",minecraft:dark_oak_door,half,upper,hinge,left,powered,false
 -1,"Dark Oak Door (Upper, Hinge Right, Powered)",minecraft:dark_oak_door,half,upper,hinge,right,powered,true
 -1,"Dark Oak Door (Upper, Hinge Right, Unpowered)",minecraft:dark_oak_door,half,upper,hinge,right,powered,false
 -1,Dark Oak Fence,minecraft:dark_oak_fence,,,,,,
@@ -239,27 +238,27 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Dark Oak Wood, Facing East/West",minecraft:dark_oak_log,axis,x,,,,
 -1,"Dark Oak Wood, Facing North/South",minecraft:dark_oak_log,axis,z,,,,
 -1,Dark Oak Wood (No Axis),minecraft:dark_oak_wood,,,,,,
--1,Dark Oak Wood Plank,minecraft:dark_oak_planks,,,,,,
+25,Dark Oak Wood Plank,minecraft:dark_oak_planks,,,,,,
 -1,"Sapling (Dark Oak, Ready to grow)",minecraft:dark_oak_sapling,,,,,,
 -1,Standing Sign (NorthEast),minecraft:oak_sign,,,,,,
 -1,Standing Sign (NorthWest),minecraft:oak_sign,,,,,,
 -1,Standing Sign (SouthEast),minecraft:oak_sign,,,,,,
 -1,Standing Sign (SouthWest),minecraft:oak_sign,,,,,,
 -1,Double Dark Oak Wood Slab,minecraft:dark_oak_slab,type,double,,,,
--1,Dark Oak Wood Slab (Bottom),minecraft:dark_oak_slab,type,bottom,,,,
+210,Dark Oak Wood Slab (Bottom),minecraft:dark_oak_slab,type,bottom,,,,
 -1,Dark Oak Wood Slab (Upper),minecraft:dark_oak_slab,type,top,,,,
--1,"Dark Oak Wood Stairs (East, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,east,,
--1,"Dark Oak Wood Stairs (East, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,east,,
--1,"Dark Oak Wood Stairs (North, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,north,,
--1,"Dark Oak Wood Stairs (North, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,north,,
--1,"Dark Oak Wood Stairs (South, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,south,,
--1,"Dark Oak Wood Stairs (South, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,south,,
--1,"Dark Oak Wood Stairs (West, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,west,,
--1,"Dark Oak Wood Stairs (West, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,west,,
+278,"Dark Oak Wood Stairs (East, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,east,,
+532,"Dark Oak Wood Stairs (East, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,east,,
+531,"Dark Oak Wood Stairs (North, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,north,,
+535,"Dark Oak Wood Stairs (North, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,north,,
+530,"Dark Oak Wood Stairs (South, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,south,,
+534,"Dark Oak Wood Stairs (South, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,south,,
+529,"Dark Oak Wood Stairs (West, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,west,,
+533,"Dark Oak Wood Stairs (West, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,west,,
 -1,Dark Prismarine,minecraft:dark_prismarine,,,,,,
 -1,Daylight Sensor (Power level 0),minecraft:daylight_detector,,,,,,
 -1,Daylight Sensor (Power level 1),minecraft:daylight_detector,,,,,,
--1,Daylight Sensor (Power level 10),minecraft:daylight_detector,,,,,,
+1346,Daylight Sensor (Power level 10),minecraft:daylight_detector,,,,,,
 -1,Daylight Sensor (Power level 11),minecraft:daylight_detector,,,,,,
 -1,Daylight Sensor (Power level 12),minecraft:daylight_detector,,,,,,
 -1,Daylight Sensor (Power level 13),minecraft:daylight_detector,,,,,,
@@ -280,7 +279,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Diamond Block,minecraft:diamond_block,,,,,,
 -1,Diamond Ore,minecraft:diamond_ore,,,,,,
 -1,Diorite,minecraft:diorite,,,,,,
--1,Dirt,minecraft:dirt,,,,,,
+15,Dirt,minecraft:dirt,,,,,,
 -1,"Dispenser (Facing Down, Activated)",minecraft:dispenser,facing,down,triggered,true,,
 -1,"Dispenser (Facing Down, Unactive)",minecraft:dispenser,facing,down,,,,
 -1,"Dispenser (Facing East, Unactive)",minecraft:dispenser,facing,east,,,,
@@ -288,7 +287,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Dispenser (Facing South, Activated)",minecraft:dispenser,facing,south,triggered,true,,
 -1,"Dispenser (Facing Up, Unactive)",minecraft:dispenser,facing,up,,,,
 -1,"Dispenser (Facing West, Activated)",minecraft:dispenser,facing,west,triggered,true,,
--1,"Dispenser (Facing West, Unactive)",minecraft:dispenser,facing,west,,,,
+1282,"Dispenser (Facing West, Unactive)",minecraft:dispenser,facing,west,,,,
 -1,"Dispenser (Facing North, Unactive)",minecraft:dispenser,facing,north,,,,
 -1,"Dispenser (Facing South, Unactive)",minecraft:dispenser,facing,south,,,,
 -1,Dragon Egg,minecraft:dragon_egg,,,,,,
@@ -346,11 +345,11 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Burning Furnace (Facing South),minecraft:furnace,facing,south,lit,true,,
 -1,Burning Furnace (Facing West),minecraft:furnace,facing,west,lit,true,,
 -1,Furnace (Facing East),minecraft:furnace,facing,east,,,,
--1,Furnace (Facing North),minecraft:furnace,facing,north,,,,
+898,Furnace (Facing North),minecraft:furnace,facing,north,,,,
 -1,Furnace (Facing South),minecraft:furnace,facing,south,,,,
--1,Furnace (Facing West),minecraft:furnace,facing,west,,,,
--1,Glass,minecraft:glass,,,,,,
--1,Glass Pane,minecraft:glass_pane,,,,,,
+900,Furnace (Facing West),minecraft:furnace,facing,west,,,,
+49,Glass,minecraft:glass,,,,,,
+176,Glass Pane,minecraft:glass_pane,,,,,,
 -1,Glowstone,minecraft:glowstone,,,,,,
 -1,Gold Block,minecraft:gold_block,,,,,,
 -1,Gold Ore,minecraft:gold_ore,,,,,,
@@ -396,20 +395,20 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Stone Monster Egg,minecraft:infested_stone,,,,,,
 -1,Stone Brick Monster Egg,minecraft:infested_stone_bricks,,,,,,
 -1,Iron Bars 1,minecraft:iron_bars,,,,,,
--1,Iron Bars,minecraft:iron_bars,,,,,,
+173,Iron Bars,minecraft:iron_bars,,,,,,
 -1,Iron Block,minecraft:iron_block,,,,,,
 -1,"Iron Door (Lower, Facing East, Opened)",minecraft:iron_door,facing,west,open,true,half,lower
 -1,"Iron Door (Lower, Facing North, Opened)",minecraft:iron_door,facing,south,open,true,half,lower
--1,"Iron Door (Lower, Facing South, Closed)",minecraft:iron_door,facing,north,open,false,half,lower
+459,"Iron Door (Lower, Facing South, Closed)",minecraft:iron_door,facing,north,open,false,half,lower
 -1,"Iron Door (Lower, Facing South, Opened)",minecraft:iron_door,facing,north,open,true,half,lower
 -1,"Iron Door (Lower, Facing West, Opened)",minecraft:iron_door,facing,east,open,true,half,lower
--1,"Iron Door (Upper, Hinge Left, Powered)",minecraft:iron_door,hinge,left,powered,true,half,upper
--1,"Iron Door (Upper, Hinge Right, Powered)",minecraft:iron_door,hinge,right,powered,true,half,upper
--1,"Iron Door (Lower, Facing East, Closed)",minecraft:iron_door,facing,west,open,false,half,lower
--1,"Iron Door (Lower, Facing West, Closed)",minecraft:iron_door,facing,east,open,false,half,lower
--1,"Iron Door (Lower, Facing North, Closed)",minecraft:iron_door,facing,south,open,false,half,lower
--1,"Iron Door (Upper, Hinge Right, Unpowered)",minecraft:iron_door,hinge,right,powered,false,half,upper
--1,"Iron Door (Upper, Hinge Left, Unpowered)",minecraft:iron_door,hinge,left,powered,false,half,upper
+466,"Iron Door (Upper, Hinge Left, Powered)",minecraft:iron_door,hinge,left,powered,true,half,upper
+467,"Iron Door (Upper, Hinge Right, Powered)",minecraft:iron_door,hinge,right,powered,true,half,upper
+458,"Iron Door (Lower, Facing East, Closed)",minecraft:iron_door,facing,west,open,false,half,lower
+119,"Iron Door (Lower, Facing West, Closed)",minecraft:iron_door,facing,east,open,false,half,lower
+457,"Iron Door (Lower, Facing North, Closed)",minecraft:iron_door,facing,south,open,false,half,lower
+465,"Iron Door (Upper, Hinge Right, Unpowered)",minecraft:iron_door,hinge,right,powered,false,half,upper
+464,"Iron Door (Upper, Hinge Left, Unpowered)",minecraft:iron_door,hinge,left,powered,false,half,upper
 -1,Iron Ore,minecraft:iron_ore,,,,,,
 -1,"Iron Trapdoor (East from block, Closed, Bottom half)",minecraft:iron_trapdoor,half,bottom,facing,west,open,false
 -1,"Iron Trapdoor (East from block, Closed, Top Half)",minecraft:iron_trapdoor,half,top,facing,west,open,false
@@ -452,8 +451,8 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Jungle Fence Gate (Facing West, Opened)",minecraft:jungle_fence_gate,facing,west,open,true,,
 -1,Jungle Leaves,minecraft:jungle_leaves,persistent,true,,,,
 -1,Jungle Leaves (Check Decay),minecraft:jungle_leaves,,,,,,
--1,Jungle Leaves (No Decay),minecraft:jungle_leaves,persistent,true,,,,
--1,Jungle Leaves (No Decay and Check Decay),minecraft:jungle_leaves,persistent,true,,,,
+290,Jungle Leaves (No Decay),minecraft:jungle_leaves,persistent,true,,,,
+320,Jungle Leaves (No Decay and Check Decay),minecraft:jungle_leaves,persistent,true,,,,
 -1,Jungle Wood Plank,minecraft:jungle_planks,,,,,,
 -1,"Sapling (Jungle, Ready to grow)",minecraft:jungle_sapling,,,,,,
 -1,Double Jungle Wood Slab,minecraft:jungle_slab,type,double,,,,
@@ -472,33 +471,33 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Jungle Wood (only bark),minecraft:jungle_wood,,,,,,
 -1,Jungle Wood,minecraft:jungle_log,axis,y,,,,
 -1,Ladder (facing east),minecraft:ladder,facing,east,,,,
--1,Ladder (facing north),minecraft:ladder,facing,north,,,,
--1,Ladder (facing south),minecraft:ladder,facing,south,,,,
+347,Ladder (facing north),minecraft:ladder,facing,north,,,,
+348,Ladder (facing south),minecraft:ladder,facing,south,,,,
 -1,Ladder (facing west),minecraft:ladder,facing,west,,,,
 -1,Lapis Lazuli Block,minecraft:lapis_block,,,,,,
 -1,Lapis Lazuli Ore,minecraft:lapis_ore,,,,,,
 -1,"Flower (Large Fern, Lower)",minecraft:large_fern,half,lower,,,,
 -1,"Flower (Large Fern, Upper)",minecraft:large_fern,half,upper,,,,
--1,"Lava (Height Level 2, Falling Lava)",minecraft:air,,,,,,
--1,"Lava (Height Level 2, Still Lava)",minecraft:air,,,,,,
+1604,"Lava (Height Level 2, Falling Lava)",minecraft:air,,,,,,
+1545,"Lava (Height Level 2, Still Lava)",minecraft:air,,,,,,
 -1,"Lava (Height Level 4, Falling Lava)",minecraft:air,,,,,,
 -1,"Lava (Height Level 4, Still Lava)",minecraft:air,,,,,,
 -1,"Lava (Height Level 6, Falling Lava)",minecraft:air,,,,,,
 -1,"Lava (Height Level 6, Still Lava)",minecraft:air,,,,,,
--1,"Lava (Lava Source Block, Falling Lava)",minecraft:air,,,,,,
--1,"Lava (Lava Source Block, Still Lava)",minecraft:lava,,,,,,
--1,"Lever (On Block Side Facing East, Active)",minecraft:lever,face,wall,facing,east,powered,true
--1,"Lever (On Block Side Facing North, Active)",minecraft:lever,face,wall,facing,north,powered,true
--1,"Lever (On Block Side Facing South, Active)",minecraft:lever,face,wall,facing,south,powered,true
--1,"Lever (On Block Side Facing West, Active)",minecraft:lever,face,wall,facing,west,powered,true
+1551,"Lava (Lava Source Block, Falling Lava)",minecraft:air,,,,,,
+1173,"Lava (Lava Source Block, Still Lava)",minecraft:lava,,,,,,
+391,"Lever (On Block Side Facing East, Active)",minecraft:lever,face,wall,facing,east,powered,true
+393,"Lever (On Block Side Facing North, Active)",minecraft:lever,face,wall,facing,north,powered,true
+392,"Lever (On Block Side Facing South, Active)",minecraft:lever,face,wall,facing,south,powered,true
+346,"Lever (On Block Side Facing West, Active)",minecraft:lever,face,wall,facing,west,powered,true
 -1,"Lever (On Block Top Points East When Off, Active)",minecraft:lever,face,floor,powered,true,,
 -1,"Lever (On Block Bottom Points East When Off, Active)",minecraft:lever,face,ceiling,powered,true,,
 -1,"Lever (On Block Bottom Points East When Off, Not Active)",minecraft:lever,face,ceiling,powered,false,,
 -1,"Lever (On Block Bottom Points South When Off, Active)",minecraft:lever,face,ceiling,powered,true,,
 -1,"Lever (On Block Bottom Points South When Off, Not Active)",minecraft:lever,face,ceiling,powered,false,,
 -1,"Lever (On Block Side Facing East, Not Active)",minecraft:lever,face,wall,facing,east,powered,false
--1,"Lever (On Block Side Facing North, Not Active)",minecraft:lever,face,wall,facing,north,powered,false
--1,"Lever (On Block Side Facing South, Not Active)",minecraft:lever,face,wall,facing,south,powered,false
+386,"Lever (On Block Side Facing North, Not Active)",minecraft:lever,face,wall,facing,north,powered,false
+385,"Lever (On Block Side Facing South, Not Active)",minecraft:lever,face,wall,facing,south,powered,false
 -1,"Lever (On Block Side Facing West, Not Active)",minecraft:lever,face,wall,facing,west,powered,false
 -1,"Lever (On Block Top Points East When Off, Not Active)",minecraft:lever,face,floor,powered,false,,
 -1,"Lever (On Block Top Points South When Off, Active)",minecraft:lever,face,floor,powered,true,,
@@ -510,7 +509,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Light Blue Wool,minecraft:light_blue_wool,,,,,,
 -1,Light Gray Carpet,minecraft:light_gray_carpet,,,,,,
 -1,Light Gray Stained Glass,minecraft:light_gray_stained_glass,,,,,,
--1,Light Gray Stained Glass Pane,minecraft:light_gray_stained_glass_pane,,,,,,
+268,Light Gray Stained Glass Pane,minecraft:light_gray_stained_glass_pane,,,,,,
 -1,Light Gray Stained Clay,minecraft:light_gray_terracotta,,,,,,
 -1,Light Gray Wool,minecraft:light_gray_wool,,,,,,
 -1,Weighted Pressure Plate (light),minecraft:light_weighted_pressure_plate,,,,,,
@@ -572,35 +571,35 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Oak Door (Hinge Left, Powered, Upper)",minecraft:oak_door,hinge,left,powered,true,half,upper
 -1,"Oak Door (Hinge Right, Powered, Upper )",minecraft:oak_door,hinge,right,powered,true,half,upper
 -1,"Oak Door (Hinge Right, Powered, Upper)",minecraft:oak_door,hinge,right,powered,true,half,upper
--1,"Oak Door (Facing East, Closed, Lower)",minecraft:oak_door,facing,west,open,false,half,lower
+451,"Oak Door (Facing East, Closed, Lower)",minecraft:oak_door,facing,west,open,false,half,lower
 -1,"Oak Door (Facing East, Opened, Lower)",minecraft:oak_door,facing,west,open,true,half,lower
 -1,"Oak Door (Facing North, Opened, Lower)",minecraft:oak_door,facing,south,open,true,half,lower
 -1,"Oak Door (Facing South, Opened, Lower)",minecraft:oak_door,facing,north,open,true,half,lower
 -1,"Oak Door (Facing West, Opened, Lower)",minecraft:oak_door,facing,east,open,true,half,lower
--1,"Oak Door (Facing North, Closed, Lower)",minecraft:oak_door,facing,south,open,false,half,lower
--1,"Oak Door (Facing South, Closed, Lower)",minecraft:oak_door,facing,north,open,false,half,lower
+450,"Oak Door (Facing North, Closed, Lower)",minecraft:oak_door,facing,south,open,false,half,lower
+452,"Oak Door (Facing South, Closed, Lower)",minecraft:oak_door,facing,north,open,false,half,lower
 -1,"Oak Door (Facing West, Closed, Lower)",minecraft:oak_door,facing,east,open,false,half,lower
--1,"Oak Door (Hinge Left, Unpowered, Upper",minecraft:oak_door,hinge,left,powered,false,half,upper
--1,"Oak Door (Hinge Right, Unpowered, Upper)",minecraft:oak_door,hinge,right,powered,false,half,upper
--1,Oak Fence,minecraft:oak_fence,,,,,,
--1,"Oak Fence Gate (Facing East, Opened)",minecraft:oak_fence_gate,facing,east,open,true,,
+309,"Oak Door (Hinge Left, Unpowered, Upper",minecraft:oak_door,hinge,left,powered,false,half,upper
+310,"Oak Door (Hinge Right, Unpowered, Upper)",minecraft:oak_door,hinge,right,powered,false,half,upper
+133,Oak Fence,minecraft:oak_fence,,,,,,
+1041,"Oak Fence Gate (Facing East, Opened)",minecraft:oak_fence_gate,facing,east,open,true,,
 -1,"Oak Fence Gate (Facing North, Opened)",minecraft:oak_fence_gate,facing,north,open,true,,
 -1,"Oak Fence Gate (Facing South, Opened)",minecraft:oak_fence_gate,facing,south,open,true,,
 -1,"Oak Fence Gate (Facing West, Opened)",minecraft:oak_fence_gate,facing,west,open,true,,
--1,"Oak Fence Gate (Facing East, Closed)",minecraft:oak_fence_gate,facing,east,open,false,,
--1,"Oak Fence Gate (Facing North, Closed)",minecraft:oak_fence_gate,facing,north,open,false,,
+1037,"Oak Fence Gate (Facing East, Closed)",minecraft:oak_fence_gate,facing,east,open,false,,
+1036,"Oak Fence Gate (Facing North, Closed)",minecraft:oak_fence_gate,facing,north,open,false,,
 -1,"Oak Fence Gate (Facing South, Closed)",minecraft:oak_fence_gate,facing,south,open,false,,
 -1,"Oak Fence Gate (Facing West, Closed)",minecraft:oak_fence_gate,facing,west,open,false,,
 -1,Oak Leaves,minecraft:oak_leaves,persistent,true,,,,
--1,Oak Leaves (No Decay),minecraft:oak_leaves,persistent,true,,,,
+328,Oak Leaves (No Decay),minecraft:oak_leaves,persistent,true,,,,
 -1,Oak Leaves (Check Decay),minecraft:oak_leaves,,,,,,
--1,Oak Leaves (No Decay and Check Decay),minecraft:oak_leaves,persistent,true,,,,
--1,Oak Wood,minecraft:oak_log,axis,y,,,,
--1,Oak Wood (facing east/west),minecraft:oak_log,axis,x,,,,
--1,Oak Wood (facing north/south),minecraft:oak_log,axis,z,,,,
--1,Oak Wood Plank,minecraft:oak_planks,,,,,,
+323,Oak Leaves (No Decay and Check Decay),minecraft:oak_leaves,persistent,true,,,,
+29,Oak Wood,minecraft:oak_log,axis,y,,,,
+295,Oak Wood (facing east/west),minecraft:oak_log,axis,x,,,,
+294,Oak Wood (facing north/south),minecraft:oak_log,axis,z,,,,
+19,Oak Wood Plank,minecraft:oak_planks,,,,,,
 -1,Wooden Pressure Plate (Active),minecraft:oak_pressure_plate,powered,true,,,,
--1,Wooden Pressure Plate (Unactive),minecraft:oak_pressure_plate,powered,false,,,,
+120,Wooden Pressure Plate (Unactive),minecraft:oak_pressure_plate,powered,false,,,,
 -1,"Sapling (Oak, )",minecraft:oak_sapling,,,,,,
 -1,"Sapling (Oak, Ready to grow)",minecraft:oak_sapling,,,,,,
 -1,Standing Sign (East),minecraft:oak_sign,,,,,,
@@ -616,38 +615,38 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Standing Sign (West-NorthWest),minecraft:oak_sign,,,,,,
 -1,Standing Sign (West-Southwest),minecraft:oak_sign,,,,,,
 -1,Wooden Slab,minecraft:oak_slab,type,bottom,,,,
--1,Oak Wood Slab (Bottom),minecraft:oak_slab,type,bottom,,,,
--1,Oak Wood Slab (Upper),minecraft:oak_slab,type,top,,,,
+205,Oak Wood Slab (Bottom),minecraft:oak_slab,type,bottom,,,,
+325,Oak Wood Slab (Upper),minecraft:oak_slab,type,top,,,,
 -1,Double Wooden Slab,minecraft:oak_slab,type,double,,,,
 -1,Double Oak Wood Slab,minecraft:oak_slab,type,double,,,,
--1,"Oak Wood Stairs (East, Normal)",minecraft:oak_stairs,half,bottom,facing,east,,
--1,"Oak Wood Stairs (East, Upside-down)",minecraft:oak_stairs,half,top,facing,east,,
--1,"Oak Wood Stairs (North, Normal)",minecraft:oak_stairs,half,bottom,facing,north,,
--1,"Oak Wood Stairs (North, Upside-down)",minecraft:oak_stairs,half,top,facing,north,,
--1,"Oak Wood Stairs (South, Normal)",minecraft:oak_stairs,half,bottom,facing,south,,
--1,"Oak Wood Stairs (South, Upside-down)",minecraft:oak_stairs,half,top,facing,south,,
--1,"Oak Wood Stairs (West, Normal)",minecraft:oak_stairs,half,bottom,facing,west,,
--1,"Oak Wood Stairs (West, Upside-down)",minecraft:oak_stairs,half,top,facing,west,,
+101,"Oak Wood Stairs (East, Normal)",minecraft:oak_stairs,half,bottom,facing,east,,
+406,"Oak Wood Stairs (East, Upside-down)",minecraft:oak_stairs,half,top,facing,east,,
+296,"Oak Wood Stairs (North, Normal)",minecraft:oak_stairs,half,bottom,facing,north,,
+409,"Oak Wood Stairs (North, Upside-down)",minecraft:oak_stairs,half,top,facing,north,,
+298,"Oak Wood Stairs (South, Normal)",minecraft:oak_stairs,half,bottom,facing,south,,
+408,"Oak Wood Stairs (South, Upside-down)",minecraft:oak_stairs,half,top,facing,south,,
+297,"Oak Wood Stairs (West, Normal)",minecraft:oak_stairs,half,bottom,facing,west,,
+407,"Oak Wood Stairs (West, Upside-down)",minecraft:oak_stairs,half,top,facing,west,,
 -1,"Wooden Trapdoor (East from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,west,open,false
--1,"Wooden Trapdoor (East from block, Closed, Top Half)",minecraft:oak_trapdoor,half,top,facing,west,open,false
+875,"Wooden Trapdoor (East from block, Closed, Top Half)",minecraft:oak_trapdoor,half,top,facing,west,open,false
 -1,"Wooden Trapdoor (East from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,west,open,true
--1,"Wooden Trapdoor (East from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,west,open,true
--1,"Wooden Trapdoor (North from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,east,open,false
+879,"Wooden Trapdoor (East from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,west,open,true
+868,"Wooden Trapdoor (North from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,east,open,false
 -1,"Wooden Trapdoor (North from block, Closed, Top Half)",minecraft:oak_trapdoor,half,top,facing,east,open,false
--1,"Wooden Trapdoor (North from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,east,open,true
--1,"Wooden Trapdoor (North from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,east,open,true
--1,"Wooden Trapdoor (South from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,south,open,false
+872,"Wooden Trapdoor (North from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,east,open,true
+880,"Wooden Trapdoor (North from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,east,open,true
+866,"Wooden Trapdoor (South from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,south,open,false
 -1,"Wooden Trapdoor (South from block, Closed, Top Half)",minecraft:oak_trapdoor,half,top,facing,south,open,false
--1,"Wooden Trapdoor (South from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,south,open,true
--1,"Wooden Trapdoor (South from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,south,open,true
--1,"Wooden Trapdoor (West from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,north,open,false
--1,"Wooden Trapdoor (West from block, Closed, Top Half)",minecraft:oak_trapdoor,half,top,facing,north,open,false
--1,"Wooden Trapdoor (West from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,north,open,true
--1,"Wooden Trapdoor (West from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,north,open,true
+870,"Wooden Trapdoor (South from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,south,open,true
+878,"Wooden Trapdoor (South from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,south,open,true
+162,"Wooden Trapdoor (West from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,north,open,false
+873,"Wooden Trapdoor (West from block, Closed, Top Half)",minecraft:oak_trapdoor,half,top,facing,north,open,false
+869,"Wooden Trapdoor (West from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,north,open,true
+877,"Wooden Trapdoor (West from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,north,open,true
 -1,"Wall Sign, north",minecraft:oak_wall_sign,facing,north,,,,
--1,"Wall Sign, south",minecraft:oak_wall_sign,facing,south,,,,
--1,"Wall Sign, west",minecraft:oak_wall_sign,facing,west,,,,
--1,Wall-mounted Sign Block west-northwest,minecraft:oak_wall_sign,facing,east,,,,
+404,"Wall Sign, south",minecraft:oak_wall_sign,facing,south,,,,
+405,"Wall Sign, west",minecraft:oak_wall_sign,facing,west,,,,
+327,Wall-mounted Sign Block west-northwest,minecraft:oak_wall_sign,facing,east,,,,
 -1,Oak Wood (only bark),minecraft:oak_wood,,,,,,
 -1,Obsidian,minecraft:obsidian,,,,,,
 -1,Orange Carpet,minecraft:orange_carpet,,,,,,
@@ -655,8 +654,8 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Orange Stained Glass Pane,minecraft:orange_stained_glass_pane,,,,,,
 -1,Orange Stained Clay,minecraft:orange_terracotta,,,,,,
 -1,Orange Tulip,minecraft:orange_tulip,,,,,,
--1,Orange Wool,minecraft:orange_wool,,,,,,
--1,Oxeye Daisy,minecraft:oxeye_daisy,,,,,,
+62,Orange Wool,minecraft:orange_wool,,,,,,
+285,Oxeye Daisy,minecraft:oxeye_daisy,,,,,,
 -1,Packed Ice,minecraft:packed_ice,,,,,,
 -1,"Flower (Peony, Lower)",minecraft:peony,half,lower,,,,
 -1,Pink Carpet,minecraft:pink_carpet,,,,,,
@@ -703,7 +702,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Polished Andesite,minecraft:polished_andesite,,,,,,
 -1,Polished Diorite,minecraft:polished_diorite,,,,,,
 -1,Polished Granite,minecraft:polished_granite,,,,,,
--1,Poppy,minecraft:poppy,,,,,,
+282,Poppy,minecraft:poppy,,,,,,
 -1,Potatoes (Growth level 0),minecraft:potatoes,age,0,,,,
 -1,Potatoes (Growth level 1),minecraft:potatoes,age,1,,,,
 -1,Potatoes (Growth level 2),minecraft:potatoes,age,2,,,,
@@ -764,14 +763,14 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Quartz Stairs (South, Upside-down)",minecraft:quartz_stairs,half,top,facing,south,,
 -1,"Quartz Stairs (West, Normal)",minecraft:quartz_stairs,half,bottom,facing,west,,
 -1,"Quartz Stairs (West, Upside-down)",minecraft:quartz_stairs,half,top,facing,west,,
--1,Rail,minecraft:rail,shape,north_south,,,,
+114,Rail,minecraft:rail,shape,north_south,,,,
 -1,Rail (curved; north and east),minecraft:rail,shape,north_east,,,,
 -1,Rail (curved; north and west),minecraft:rail,shape,north_west,,,,
 -1,Rail (curved; south and east),minecraft:rail,shape,south_east,,,,
 -1,Rail (curved; south and west),minecraft:rail,shape,south_west,,,,
--1,"Rail (sloped, ascending to north)",minecraft:rail,shape,ascending_north,,,,
+366,"Rail (sloped, ascending to north)",minecraft:rail,shape,ascending_north,,,,
 -1,"Rail (sloped, ascending to east)",minecraft:rail,shape,ascending_east,,,,
--1,"Rail (sloped, ascending to south)",minecraft:rail,shape,ascending_south,,,,
+367,"Rail (sloped, ascending to south)",minecraft:rail,shape,ascending_south,,,,
 -1,"Rail (sloped, ascending to west)",minecraft:rail,shape,ascending_west,,,,
 -1,Rail (straight; east and west),minecraft:rail,shape,east_west,,,,
 -1,Red  Carpet,minecraft:red_carpet,,,,,,
@@ -807,24 +806,24 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Red Stained Glass Pane,minecraft:red_stained_glass_pane,,,,,,
 -1,Red Stained Clay,minecraft:red_terracotta,,,,,,
 -1,Red Tulip,minecraft:red_tulip,,,,,,
--1,Red Wool,minecraft:red_wool,,,,,,
+72,Red Wool,minecraft:red_wool,,,,,,
 -1,Redstone Block,minecraft:redstone_block,,,,,,
 -1,Redstone Lamp (active),minecraft:redstone_lamp,lit,true,,,,
--1,Redstone Lamp (inactive),minecraft:redstone_lamp,lit,false,,,,
+197,Redstone Lamp (inactive),minecraft:redstone_lamp,lit,false,,,,
 -1,Redstone Ore,minecraft:redstone_ore,,,,,,
--1,Redstone Torch (off) (Facing East),minecraft:redstone_wall_torch,facing,east,lit,false,,
--1,Redstone Torch (off) (Facing North),minecraft:redstone_wall_torch,facing,north,lit,false,,
--1,Redstone Torch (off) (Facing South),minecraft:redstone_wall_torch,facing,south,lit,false,,
+740,Redstone Torch (off) (Facing East),minecraft:redstone_wall_torch,facing,east,lit,false,,
+743,Redstone Torch (off) (Facing North),minecraft:redstone_wall_torch,facing,north,lit,false,,
+742,Redstone Torch (off) (Facing South),minecraft:redstone_wall_torch,facing,south,lit,false,,
 -1,Redstone Torch (off) (Facing Up),minecraft:redstone_torch,lit,false,,,,
--1,Redstone Torch (off) (Facing West),minecraft:redstone_wall_torch,facing,west,lit,false,,
+741,Redstone Torch (off) (Facing West),minecraft:redstone_wall_torch,facing,west,lit,false,,
 -1,Redstone Torch (on) (),minecraft:redstone_torch,,,,,,
 -1,Redstone Torch (on) (Facing East),minecraft:redstone_wall_torch,facing,east,,,,
 -1,Redstone Torch (on) (Facing North),minecraft:redstone_wall_torch,facing,north,,,,
 -1,Redstone Torch (on) (Facing South),minecraft:redstone_wall_torch,facing,south,,,,
--1,Redstone Torch (on) (Facing Up),minecraft:redstone_torch,,,,,,
+492,Redstone Torch (on) (Facing Up),minecraft:redstone_torch,,,,,,
 -1,Redstone Torch (on) (Facing West),minecraft:redstone_wall_torch,facing,west,,,,
--1,Redstone Wire (Power:0),minecraft:redstone_wire,,,,,,
--1,Redstone Wire (Power:10),minecraft:redstone_wire,,,,,,
+103,Redstone Wire (Power:0),minecraft:redstone_wire,,,,,,
+733,Redstone Wire (Power:10),minecraft:redstone_wire,,,,,,
 -1,Redstone Wire (Power:11),minecraft:redstone_wire,,,,,,
 -1,Redstone Wire (Power:12),minecraft:redstone_wire,,,,,,
 -1,Redstone Wire (Power:13),minecraft:redstone_wire,,,,,,
@@ -837,8 +836,8 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Redstone Wire (Power:5),minecraft:redstone_wire,,,,,,
 -1,Redstone Wire (Power:6),minecraft:redstone_wire,,,,,,
 -1,Redstone Wire (Power:7),minecraft:redstone_wire,,,,,,
--1,Redstone Wire (Power:8),minecraft:redstone_wire,,,,,,
--1,Redstone Wire (Power:9),minecraft:redstone_wire,,,,,,
+731,Redstone Wire (Power:8),minecraft:redstone_wire,,,,,,
+732,Redstone Wire (Power:9),minecraft:redstone_wire,,,,,,
 -1,"Redstone Repeater Block (off) (Facing East, Delay of 1 tick)",minecraft:repeater,,,,,,
 -1,"Redstone Repeater Block (off) (Facing East, Delay of 2 ticks",minecraft:repeater,,,,,,
 -1,"Redstone Repeater Block (off) (Facing East, Delay of 3 ticks",minecraft:repeater,,,,,,
@@ -870,7 +869,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Redstone Repeater Block (on) (Facing West, Delay of 3 ticks)",minecraft:repeater,,,,,,
 -1,"Redstone Repeater Block (on) (Facing West, Delay of 4 ticks)",minecraft:repeater,,,,,,
 -1,"Flower (Rose Bush, Lower)",minecraft:rose_bush,half,lower,,,,
--1,Sand,minecraft:sand,,,,,,
+26,Sand,minecraft:sand,,,,,,
 -1,Sandstone,minecraft:sandstone,,,,,,
 -1,Sandstone Slab,minecraft:sandstone_slab,type,bottom,,,,
 -1,Sandstone Slab (Upper),minecraft:sandstone_slab,type,top,,,,
@@ -923,24 +922,24 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Spruce Fence Gate (Facing West, Opened)",minecraft:spruce_fence_gate,facing,west,open,true,,
 -1,"Spruce Fence Gate (In Wall, Facing North, Opened)",minecraft:spruce_fence_gate,facing,north,open,true,in_wall,true
 -1,Spruce Leaves,minecraft:spruce_leaves,persistent,true,,,,
--1,Spruce Leaves (No Decay),minecraft:spruce_leaves,persistent,true,,,,
+329,Spruce Leaves (No Decay),minecraft:spruce_leaves,persistent,true,,,,
 -1,Spruce Leaves (No Decay and Check Decay),minecraft:spruce_leaves,persistent,true,,,,
--1,Spruce Wood Plank,minecraft:spruce_planks,,,,,,
+20,Spruce Wood Plank,minecraft:spruce_planks,,,,,,
 -1,"Sapling (Spruce, Ready to grow)",minecraft:spruce_sapling,,,,,,
--1,Spruce Wood Slab (Bottom),minecraft:spruce_slab,type,bottom,,,,
--1,Spruce Wood Slab (Upper),minecraft:spruce_slab,type,top,,,,
--1,Double Spruce Wood Slab,minecraft:spruce_slab,type,double,,,,
--1,"Spruce Wood Stairs (East, Normal)",minecraft:spruce_stairs,half,bottom,facing,east,,
--1,"Spruce Wood Stairs (East, Upside-down)",minecraft:spruce_stairs,half,top,facing,east,,
--1,"Spruce Wood Stairs (North, Normal)",minecraft:spruce_stairs,half,bottom,facing,north,,
--1,"Spruce Wood Stairs (North, Upside-down)",minecraft:spruce_stairs,half,top,facing,north,,
--1,"Spruce Wood Stairs (South, Normal)",minecraft:spruce_stairs,half,bottom,facing,south,,
--1,"Spruce Wood Stairs (South, Upside-down)",minecraft:spruce_stairs,half,top,facing,south,,
--1,"Spruce Wood Stairs (West, Normal)",minecraft:spruce_stairs,half,bottom,facing,west,,
--1,"Spruce Wood Stairs (West, Upside-down)",minecraft:spruce_stairs,half,top,facing,west,,
--1,Spruce Wood,minecraft:spruce_log,axis,y,,,,
--1,Spruce wood (facing east/west),minecraft:spruce_log,axis,x,,,,
--1,Spruce Wood (facing north/south),minecraft:spruce_log,axis,z,,,,
+206,Spruce Wood Slab (Bottom),minecraft:spruce_slab,type,bottom,,,,
+1136,Spruce Wood Slab (Upper),minecraft:spruce_slab,type,top,,,,
+200,Double Spruce Wood Slab,minecraft:spruce_slab,type,double,,,,
+218,"Spruce Wood Stairs (East, Normal)",minecraft:spruce_stairs,half,bottom,facing,east,,
+620,"Spruce Wood Stairs (East, Upside-down)",minecraft:spruce_stairs,half,top,facing,east,,
+619,"Spruce Wood Stairs (North, Normal)",minecraft:spruce_stairs,half,bottom,facing,north,,
+623,"Spruce Wood Stairs (North, Upside-down)",minecraft:spruce_stairs,half,top,facing,north,,
+618,"Spruce Wood Stairs (South, Normal)",minecraft:spruce_stairs,half,bottom,facing,south,,
+622,"Spruce Wood Stairs (South, Upside-down)",minecraft:spruce_stairs,half,top,facing,south,,
+617,"Spruce Wood Stairs (West, Normal)",minecraft:spruce_stairs,half,bottom,facing,west,,
+621,"Spruce Wood Stairs (West, Upside-down)",minecraft:spruce_stairs,half,top,facing,west,,
+30,Spruce Wood,minecraft:spruce_log,axis,y,,,,
+430,Spruce wood (facing east/west),minecraft:spruce_log,axis,x,,,,
+433,Spruce Wood (facing north/south),minecraft:spruce_log,axis,z,,,,
 -1,Spruce Wood (only bark),minecraft:spruce_wood,,,,,,
 -1,"Sticky Piston (Facing down, Extended)",minecraft:sticky_piston,facing,down,extended,true,,
 -1,"Sticky Piston (Facing down, Not Extended)",minecraft:sticky_piston,facing,down,extended,false,,
@@ -954,32 +953,32 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Sticky Piston (Facing up, Not Extended)",minecraft:sticky_piston,facing,up,extended,false,,
 -1,"Sticky Piston (Facing west, Extended)",minecraft:sticky_piston,facing,west,extended,true,,
 -1,"Sticky Piston (Facing west, Not Extended)",minecraft:sticky_piston,facing,west,extended,false,,
--1,Stone,minecraft:stone,,,,,,
+4,Stone,minecraft:stone,,,,,,
 -1,Stone Brick Slab (Upper),minecraft:stone_brick_slab,type,top,,,,
 -1,Stone Brick Slab,minecraft:stone_brick_slab,type,bottom,,,,
 -1,Double Stone Brick Slab,minecraft:stone_brick_slab,type,double,,,,
 -1,Stone Brick Stairs (East),minecraft:stone_brick_stairs,half,bottom,facing,east,,
 -1,"Stone Brick Stairs (East, Upside-down)",minecraft:stone_brick_stairs,half,top,facing,east,,
--1,"Stone Brick Stairs (North, Normal)",minecraft:stone_brick_stairs,half,bottom,facing,north,,
+483,"Stone Brick Stairs (North, Normal)",minecraft:stone_brick_stairs,half,bottom,facing,north,,
 -1,"Stone Brick Stairs (North, Upside-down)",minecraft:stone_brick_stairs,half,top,facing,north,,
--1,"Stone Brick Stairs (South, Normal)",minecraft:stone_brick_stairs,half,bottom,facing,south,,
+482,"Stone Brick Stairs (South, Normal)",minecraft:stone_brick_stairs,half,bottom,facing,south,,
 -1,"Stone Brick Stairs (South, Upside-down)",minecraft:stone_brick_stairs,half,top,facing,south,,
--1,Stone Brick Stairs (West),minecraft:stone_brick_stairs,half,bottom,facing,west,,
+351,Stone Brick Stairs (West),minecraft:stone_brick_stairs,half,bottom,facing,west,,
 -1,"Stone Brick Stairs (West, Upside-down)",minecraft:stone_brick_stairs,half,top,facing,west,,
--1,Stone Bricks,minecraft:stone_bricks,,,,,,
+169,Stone Bricks,minecraft:stone_bricks,,,,,,
 -1,"Stone Button (Facing Down, Inactive)",minecraft:stone_button,face,ceiling,,,,
 -1,"Stone Button (Facing Up, Active)",minecraft:stone_button,face,floor,powered,true,,
 -1,"Stone Button (Facing Up, Inactive)",minecraft:stone_button,face,floor,,,,
--1,"Stone Button (Facing East, Inactive)",minecraft:stone_button,face,wall,facing,east,,
--1,"Stone Button (Facing North, Inactive)",minecraft:stone_button,face,wall,facing,north,,
--1,"Stone Button (Facing South, Inactive)",minecraft:stone_button,face,wall,facing,south,,
--1,"Stone Button (Facing West, Inactive)",minecraft:stone_button,face,wall,facing,west,,
+758,"Stone Button (Facing East, Inactive)",minecraft:stone_button,face,wall,facing,east,,
+308,"Stone Button (Facing North, Inactive)",minecraft:stone_button,face,wall,facing,north,,
+304,"Stone Button (Facing South, Inactive)",minecraft:stone_button,face,wall,facing,south,,
+759,"Stone Button (Facing West, Inactive)",minecraft:stone_button,face,wall,facing,west,,
 -1,Stone Pressure Plate (Active),minecraft:stone_pressure_plate,powered,true,,,,
 -1,Stone Pressure Plate (Unactive),minecraft:stone_pressure_plate,powered,false,,,,
--1,Stone Slab,minecraft:smooth_stone_slab,type,bottom,,,,
+85,Stone Slab,minecraft:smooth_stone_slab,type,bottom,,,,
 -1,(Stone) Wooden Slab (Upper),minecraft:stone_slab,,,,,,
--1,Stone Slab (Upper),minecraft:smooth_stone_slab,type,top,,,,
--1,Double Stone Slab,minecraft:smooth_stone_slab,type,double,,,,
+493,Stone Slab (Upper),minecraft:smooth_stone_slab,type,top,,,,
+78,Double Stone Slab,minecraft:smooth_stone_slab,type,double,,,,
 -1,Sugar Canes (Freshly Planted Cane),minecraft:sugar_cane,age,0,,,,
 -1,Sugar Canes (First stage of growth),minecraft:sugar_cane,age,1,,,,
 -1,Sugar Canes (Second stage of growth),minecraft:sugar_cane,age,2,,,,
@@ -1001,15 +1000,15 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Flower (Double Tallgrass, Upper)",minecraft:tall_grass,half,upper,,,,
 -1,Hardened Clay,minecraft:terracotta,,,,,,
 -1,TNT,minecraft:tnt,,,,,,
--1,Torch (Facing East),minecraft:wall_torch,facing,east,,,,
--1,Torch (Facing North),minecraft:wall_torch,facing,north,,,,
--1,Torch (Facing South),minecraft:wall_torch,facing,south,,,,
--1,Torch (Facing Up),minecraft:torch,,,,,,
--1,Torch (Facing West),minecraft:wall_torch,facing,west,,,,
--1,Trapped Chest (Facing East),minecraft:trapped_chest,facing,east,,,,
+446,Torch (Facing East),minecraft:wall_torch,facing,east,,,,
+449,Torch (Facing North),minecraft:wall_torch,facing,north,,,,
+448,Torch (Facing South),minecraft:wall_torch,facing,south,,,,
+332,Torch (Facing Up),minecraft:torch,,,,,,
+447,Torch (Facing West),minecraft:wall_torch,facing,west,,,,
+944,Trapped Chest (Facing East),minecraft:trapped_chest,facing,east,,,,
 -1,Trapped Chest (Facing North),minecraft:trapped_chest,facing,north,,,,
--1,Trapped Chest (Facing South),minecraft:trapped_chest,facing,south,,,,
--1,Trapped Chest (Facing West),minecraft:trapped_chest,facing,west,,,,
+942,Trapped Chest (Facing South),minecraft:trapped_chest,facing,south,,,,
+943,Trapped Chest (Facing West),minecraft:trapped_chest,facing,west,,,,
 -1,"Tripwire (Unactive, In the Air, Attached to a Circuit, Armed",minecraft:tripwire,,,,,,
 -1,"Tripwire (Unactive, In the Air, Unattached, Armed)",minecraft:tripwire,,,,,,
 -1,"Tripwire (Unactive, On a Block, Unattached, Armed)",minecraft:tripwire,,,,,,
@@ -1052,7 +1051,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,"Water (Water level Max - 5, Falling)",minecraft:flowing_water,falling,true,level,3,,
 -1,"Water (Water level Min +1, Falling)",minecraft:flowing_water,falling,true,level,2,,
 -1,"Water (Water level Min, Falling)",minecraft:flowing_water,falling,true,level,1,,
--1,Still Water,minecraft:water,,,,,,
+331,Still Water,minecraft:water,,,,,,
 -1,Wet Sponge,minecraft:wet_sponge,,,,,,
 -1,Wheat (Age 0),minecraft:wheat,age,0,,,,
 -1,Wheat (Age 1),minecraft:wheat,age,1,,,,
@@ -1062,17 +1061,17 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Wheat (Age 5),minecraft:wheat,age,5,,,,
 -1,Wheat (Age 6),minecraft:wheat,age,6,,,,
 -1,Wheat (Age 7),minecraft:wheat,age,7,,,,
--1,"Bed (North, Empty, Foot of the bed)",minecraft:white_bed,facing,north,part,foot,,
--1,"Bed (North, Empty, Head of the bed)",minecraft:white_bed,facing,north,part,head,,
+508,"Bed (North, Empty, Foot of the bed)",minecraft:white_bed,facing,north,part,foot,,
+521,"Bed (North, Empty, Head of the bed)",minecraft:white_bed,facing,north,part,head,,
 -1,"Bed (South, Empty, Foot of the bed)",minecraft:white_bed,facing,south,part,foot,,
 -1,"Bed (South, Empty, Head of the bed)",minecraft:white_bed,facing,south,part,head,,
 -1,"Bed (East, Empty, Foot of the bed)",minecraft:white_bed,facing,east,part,foot,,
 -1,"Bed (East, Empty, Head of the bed)",minecraft:white_bed,facing,east,part,head,,
--1,"Bed (West, Empty, Foot of the bed)",minecraft:white_bed,facing,west,part,foot,,
--1,"Bed (West, Empty, Head of the bed)",minecraft:white_bed,facing,west,part,head,,
+507,"Bed (West, Empty, Foot of the bed)",minecraft:white_bed,facing,west,part,foot,,
+515,"Bed (West, Empty, Head of the bed)",minecraft:white_bed,facing,west,part,head,,
 -1,White Carpet,minecraft:white_carpet,,,,,,
 -1,White Stained Glass,minecraft:white_stained_glass,,,,,,
--1,White Stained Glass Pane,minecraft:white_stained_glass_pane,,,,,,
+260,White Stained Glass Pane,minecraft:white_stained_glass_pane,,,,,,
 -1,White Stained Clay,minecraft:white_terracotta,,,,,,
 -1,White Tulip,minecraft:white_tulip,,,,,,
 -1,White Wool,minecraft:white_wool,,,,,,
@@ -1080,7 +1079,7 @@ mat_id,from,to,state1,state2,state3,state4,state5,state6
 -1,Yellow Stained Glass,minecraft:yellow_stained_glass,,,,,,
 -1,Yellow Stained Glass Pane,minecraft:yellow_stained_glass_pane,,,,,,
 -1,Yellow Stained Clay,minecraft:yellow_terracotta,,,,,,
--1,Yellow Wool,minecraft:yellow_wool,,,,,,
+64,Yellow Wool,minecraft:yellow_wool,,,,,,
 -1,Wall-Mounted Banner (west-northwest),minecraft:white_wall_banner,facing,west,,,,
 -1,Wall-Mounted Banner (west),minecraft:white_wall_banner,facing,west,,,,
 -1,Wall-Mounted Banner (west-southwest),minecraft:white_wall_banner,facing,west,,,,
