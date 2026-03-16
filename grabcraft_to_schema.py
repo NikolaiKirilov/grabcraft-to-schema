@@ -1,45 +1,64 @@
 import csv, requests, json
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 from litemapy import Schematic, Region, BlockState
 
-# Automatically map grabcraft blocks to schema blocks
-def auto_block_map(grabcraft_block):
-    def drop_state(b):
-        parenthesis_loc = b.find(" (")
-        if parenthesis_loc != -1:
-            b = b[:parenthesis_loc]
-        return b
-
-    # Set the schema_block to grabcraft_block so that it's ready for later transformations
-    schema_block = grabcraft_block
-    # Remove the parenthesis
-    schema_block = drop_state(schema_block)
-    # Make all of the characters lowercase like in vanilla Minecraft block codes
-    schema_block = schema_block.lower()
-    # Removed all prepended spaces
-    schema_block = schema_block.strip()
-    # Replace all spaces with _ like in vanilla Minecraft block codes
-    schema_block = schema_block.replace(' ', '_')
-    # Replace some weird formatting regarding wood items
-    schema_block = schema_block.replace("_wood_", '_')
-    # Replace some weird formatting regarding wall mounted items
-    schema_block = schema_block.replace("wall-mounted_", '')
-
-    return f"minecraft:{ schema_block }"
-
-class RenderObject:
-    def __init__(self, url, north='north', block_map_file="blockmap.csv", dump=False):
+class BlockMap:
+    def __init__(self, file="blockmap.csv"):
         # Load the block map of predefined blocks
-        self.block_map = {}
-        with open(block_map_file, 'r') as f:
+        self.block_map = OrderedDict()
+        with open(file, 'r') as f:
             reader = csv.reader(f)
             header = True
             for row in reader:
                 if header:
                     header = False
                     continue
-                self.block_map[(int(row[0]), row[1])] = row[2:]
+                self.block_map[(int(row[0]), row[1].strip())] = row[2:]
 
+    def __call__(self, block_id, block_name):
+        if (block_id, block_name) in self.block_map:
+            block = self.block_map[(block_id, block_name)]
+        elif (-1, block_name) in self.block_map:
+            block = self.block_map[(-1, block_name)]
+        else:
+            block = BlockMap.guess(block_name)
+            print(f'"{block_name}" ({block_id}) -> "{block}"')
+            # return block
+            exit()
+
+        props = dict(zip(block[1::2], block[2::2]))
+        return block[0], props
+
+    # Automatically map grabcraft blocks to schema blocks
+    @staticmethod
+    def guess(grabcraft_block):
+        def drop_state(b):
+            parenthesis_loc = b.find(" (")
+            if parenthesis_loc != -1:
+                b = b[:parenthesis_loc]
+            return b
+
+        # Set the schema_block to grabcraft_block so that it's ready for later transformations
+        schema_block = grabcraft_block
+        # Remove the parenthesis
+        schema_block = drop_state(schema_block)
+        # Make all of the characters lowercase like in vanilla Minecraft block codes
+        schema_block = schema_block.lower()
+        # Removed all prepended spaces
+        schema_block = schema_block.strip()
+        # Replace all spaces with _ like in vanilla Minecraft block codes
+        schema_block = schema_block.replace(' ', '_')
+        # Replace some weird formatting regarding wood items
+        schema_block = schema_block.replace("_wood_", '_')
+        # Replace some weird formatting regarding wall mounted items
+        schema_block = schema_block.replace("wall-mounted_", '')
+
+        return f"minecraft:{ schema_block }"
+
+
+class RenderObject:
+    def __init__(self, url, north='north', block_map=None, dump=False):
+        self.block_map = block_map or BlockMap()
         self.url = url[:url.find('#')] + "#general"
         self.north = north.lower()
 
@@ -137,21 +156,6 @@ class RenderObject:
             case _:
                 exit(f"invalid north: '{north}'")
 
-    def map_block(self, block_id, block_name):
-        if (block_id, block_name) in self.block_map:
-            block = self.block_map[(block_id, block_name)]
-        elif (-1, block_name) in self.block_map:
-            block = self.block_map[(-1, block_name)]
-        else:
-            block = auto_block_map(block_name)
-            print(f'"{block_name}" ({block_id}) -> "{block}"')
-            # return block
-            exit()
-
-        props = dict(zip(block[1::2], block[2::2]))
-        return block[0], props
-
-
     def to_schema(self):
         # Store the dimensions
         dims = self.map_dims()
@@ -166,7 +170,7 @@ class RenderObject:
             schema_y = gc_y - 1
             schema_x, schema_z = self.map_xz(gc_x, gc_z)
 
-            schema_block, schema_props = self.map_block(gc_id, gc_name)
+            schema_block, schema_props = self.block_map(gc_id, gc_name)
             block = BlockState(schema_block, **schema_props)
             reg.setblock(schema_x, schema_y, schema_z, block)
 
