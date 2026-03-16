@@ -1,33 +1,45 @@
 import csv, requests, json
-from collections import defaultdict, OrderedDict
+from collections import defaultdict
 from litemapy import Schematic, Region, BlockState
 
 class BlockMap:
     def __init__(self, file="blockmap.csv"):
-        # Load the block map of predefined blocks
-        self.block_map = OrderedDict()
-        with open(file, 'r') as f:
+        self.updated = 0
+        # Load the block map of known blocks
+        self.block_map = {}
+        self.block_list = []
+        with open(file, 'r', newline='') as f:
             reader = csv.reader(f)
-            header = True
             for row in reader:
-                if header:
-                    header = False
-                    continue
-                self.block_map[(int(row[0]), row[1].strip())] = row[2:]
+                key = (int(row[0]), row[1].strip())
+                self.block_map[key] = row[2:]
+                self.block_list.append(key)
 
     def __call__(self, block_id, block_name):
-        if (block_id, block_name) in self.block_map:
-            block = self.block_map[(block_id, block_name)]
-        elif (-1, block_name) in self.block_map:
-            block = self.block_map[(-1, block_name)]
-        else:
-            block = BlockMap.guess(block_name)
-            print(f'"{block_name}" ({block_id}) -> "{block}"')
-            # return block
-            exit()
+        key = (block_id, block_name)
+        val = self.block_map.get(key)
+        if val is None:
+            key1 = (-1, block_name)
+            val = self.block_map.pop(key1, None)
+            if val is not None:
+                idx = self.block_list.index(key1)
+                self.block_list[idx] = key
+            else:
+                val = [BlockMap.guess(block_name)]
+                self.block_list.append(key)
 
-        props = dict(zip(block[1::2], block[2::2]))
-        return block[0], props
+            self.block_map[key] = val
+            self.updated += 1
+
+        props = dict(zip(val[1::2], val[2::2]))
+        return val[0], props
+
+    def save(self, filename):
+        with open(filename, 'w', newline='') as f:
+            writer = csv.writer(f)
+            for key in self.block_list:
+                val =  self.block_map[key]
+                writer.writerow([key[0], key[1]] + val)
 
     # Automatically map grabcraft blocks to schema blocks
     @staticmethod

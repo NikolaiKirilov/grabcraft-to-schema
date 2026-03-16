@@ -20,6 +20,9 @@ print("Done downloading!\n")
 
 # Convert render object to MC schema
 schem, materials_list = robj.to_schema()
+if robj.block_map.updated > 0:
+    print(f"Blockmap updated: {robj.block_map.updated}")
+    robj.block_map.save("blockmap_new.csv")
 
 out_name = robj.name.replace(" ", "_")
 
@@ -27,7 +30,7 @@ out_name = robj.name.replace(" ", "_")
 schem.save(out_name + ".litematic")
 
 # Save the schema statistics
-with open(out_name + ".txt", "w") as f:
+with open(out_name + ".info", "w") as f:
     print(" -= info =-", file=f)
     print("Name:", robj.name, file=f)
     print("URL:", robj.url, file=f)
