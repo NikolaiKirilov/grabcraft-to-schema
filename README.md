@@ -38,16 +38,18 @@ Technically it is possible to extract compass info from the webpage data automat
 
 ## Current Limitations:
 As I only tested this on builds that I'm interested in personally, the library should not be expected to handle every single build offered by GrabCraft. If a structure cannot be converted properly it is likely due to one the following reasons:
-- A block has not been seen before and is not present in the block mapping file `blockmap.csv`. There is a piece of code in the library to try and guess the block's identity but it is disabled for now. The success is not guaranteed and reconstructing the block states from the GrabCraft's free-form naming is practically impossible. Currently if an unknown block is encountered, the library aborts the processing and exits. The name of the block and possible candidate for the official block ID are displayed on exit. Try to add them to `blockmap.csv` and run CLI again.
+- A block has not been seen before and is not present in the block mapping file `blockmap.csv`. Currently if an unknown block is encountered, the library tries to guess the block's identity but the success is not guaranteed and reconstructing the block states from the GrabCraft's free-form naming is practically impossible. The blockmap file with the new entry appended to the bottom of the list will be saved to `blockmap_new.csv`. Correct the ID/state of the new entry, rename the file to `blockmap.csv` and run CLI again.
 - Even though present in `blockmap.csv`, many blocks are still missing neccessary states info and, when imported into Minecraft world, might be oriented wrongly, dropped as items and such.
 
 ## Documentation:
-- `RenderObject(url, north='north', block_map_file="blockmap.csv")`: the constructor to instantiate an object representing a GrabCraft's blueprint. `url` is link the blueprint's page, `north` is to specify build's orientation if different from blueprint's, `block_map_file` is for a custom block mapping file.
+- `RenderObject(url, north='north', block_map=None, dump=False)`: the constructor to instantiate an object representing a GrabCraft's blueprint. `url` is link the blueprint's page, `north` is to specify build's orientation if different from blueprint's, `block_map` is for a custom blockmap object. If `dump` is True, GrabCraft webpage and RenderObject JSON file will be saved for inspection.
 - `RenderObject.to_schema()`: the user method to convert GrabCraft's blueprint data into litematic schema
 - `RenderObject.map_xz(x, z)`: internal method to map coordinates from blueprint to schema
 - `RenderObject.map_dims()`: internal method to map build's dimensions from blueprint to schema
-- `RenderObject.map_block(grabcraft_block)`: internal method to map a GrabCraft's block name to the corresponding Minecraft's block ID and its states
+- `BlockMap(self, file="blockmap.csv")`: constructor for the blockmap object. Normally the new instance will be created by RenderObject automatically
+- `BlockMap.__call__(block_id, block_name)`: the method to convert GrabCraft block names to Minecraft block IDs and states.
+- `BlockMap.save(self, filename)`: the method to save blockmap data to CSV file.
 
 ## To Do
-- Generate block placement instructions for survival
+- After conversion, update 2-tall objects (doors, flowers) for consitency
 - Convert to Bedrock's mcstructure format
