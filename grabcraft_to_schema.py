@@ -93,7 +93,7 @@ class RenderObject:
         # Get the end index for the name
         name_e = res.find("<", name_i)
         # Get the name
-        self.name = res[name_i:name_e]
+        self.name = res[name_i:name_e].strip()
 
         # Get the index for the table containing the dimensions and tags
         table_i = res.find("object_properties")
