@@ -93,7 +93,7 @@
 275,Black Stained Glass Pane,minecraft:black_stained_glass_pane,,,,,,
 259,Black Stained Clay,minecraft:black_terracotta,,,,,,
 39,Black Wool,minecraft:black_wool,,,,,,
--1,Blue Carpet,minecraft:blue_carpet,,,,,,
+1107,Blue Carpet,minecraft:blue_carpet,,,,,,
 1183,Blue Orchid,minecraft:blue_orchid,,,,,,
 -1,Blue Stained Glass,minecraft:blue_stained_glass,,,,,,
 -1,Blue Stained Glass Pane,minecraft:blue_stained_glass_pane,,,,,,
@@ -276,7 +276,7 @@
 1352,Dead Bush,minecraft:dead_bush,,,,,,
 1250,"Detector Rail (Flat, North-South, Unactive)",minecraft:detector_rail,,,,,,
 1251,"Detector Rail (Flat, West-East, Unactive)",minecraft:detector_rail,shape,east_west,,,,
--1,Diamond Block,minecraft:diamond_block,,,,,,
+105,Diamond Block,minecraft:diamond_block,,,,,,
 -1,Diamond Ore,minecraft:diamond_ore,,,,,,
 -1,Diorite,minecraft:diorite,,,,,,
 15,Dirt,minecraft:dirt,,,,,,
@@ -351,8 +351,8 @@
 49,Glass,minecraft:glass,,,,,,
 176,Glass Pane,minecraft:glass_pane,,,,,,
 137,Glowstone,minecraft:glowstone,,,,,,
--1,Gold Block,minecraft:gold_block,,,,,,
--1,Gold Ore,minecraft:gold_ore,,,,,,
+73,Gold Block,minecraft:gold_block,,,,,,
+44,Gold Ore,minecraft:gold_ore,,,,,,
 5,Granite,minecraft:granite,,,,,,
 14,Grass,minecraft:grass_block,,,,,,
 60,Grass,minecraft:short_grass,,,,,,
@@ -478,19 +478,19 @@
 -1,Lapis Lazuli Ore,minecraft:lapis_ore,,,,,,
 919,"Flower (Large Fern, Lower)",minecraft:large_fern,half,lower,,,,
 926,"Flower (Large Fern, Upper)",minecraft:large_fern,half,upper,,,,
-1604,"Lava (Height Level 2, Falling Lava)",minecraft:air,,,,,,
-1545,"Lava (Height Level 2, Still Lava)",minecraft:air,,,,,,
--1,"Lava (Height Level 4, Falling Lava)",minecraft:air,,,,,,
--1,"Lava (Height Level 4, Still Lava)",minecraft:air,,,,,,
--1,"Lava (Height Level 6, Falling Lava)",minecraft:air,,,,,,
--1,"Lava (Height Level 6, Still Lava)",minecraft:air,,,,,,
-1551,"Lava (Lava Source Block, Falling Lava)",minecraft:air,,,,,,
+1604,"Lava (Height Level 2, Falling Lava)",minecraft:lava,level,8,,,,
+1545,"Lava (Height Level 2, Still Lava)",minecraft:lava,level,2,,,,
+-1,"Lava (Height Level 4, Falling Lava)",minecraft:lava,level,8,,,,
+-1,"Lava (Height Level 4, Still Lava)",minecraft:lava,level,4,,,,
+-1,"Lava (Height Level 6, Falling Lava)",minecraft:lava,level,8,,,,
+-1,"Lava (Height Level 6, Still Lava)",minecraft:lava,level,6,,,,
+1551,"Lava (Lava Source Block, Falling Lava)",minecraft:lava,level,8,,,,
 1173,"Lava (Lava Source Block, Still Lava)",minecraft:lava,,,,,,
 391,"Lever (On Block Side Facing East, Active)",minecraft:lever,face,wall,facing,east,powered,true
 393,"Lever (On Block Side Facing North, Active)",minecraft:lever,face,wall,facing,north,powered,true
 392,"Lever (On Block Side Facing South, Active)",minecraft:lever,face,wall,facing,south,powered,true
 346,"Lever (On Block Side Facing West, Active)",minecraft:lever,face,wall,facing,west,powered,true
--1,"Lever (On Block Top Points East When Off, Active)",minecraft:lever,face,floor,powered,true,,
+1325,"Lever (On Block Top Points East When Off, Active)",minecraft:lever,face,floor,powered,true,,
 -1,"Lever (On Block Bottom Points East When Off, Active)",minecraft:lever,face,ceiling,powered,true,,
 -1,"Lever (On Block Bottom Points East When Off, Not Active)",minecraft:lever,face,ceiling,powered,false,,
 -1,"Lever (On Block Bottom Points South When Off, Active)",minecraft:lever,face,ceiling,powered,true,,
@@ -499,7 +499,7 @@
 386,"Lever (On Block Side Facing North, Not Active)",minecraft:lever,face,wall,facing,north,powered,false
 385,"Lever (On Block Side Facing South, Not Active)",minecraft:lever,face,wall,facing,south,powered,false
 384,"Lever (On Block Side Facing West, Not Active)",minecraft:lever,face,wall,facing,west,powered,false
--1,"Lever (On Block Top Points East When Off, Not Active)",minecraft:lever,face,floor,powered,false,,
+388,"Lever (On Block Top Points East When Off, Not Active)",minecraft:lever,face,floor,powered,false,,
 1324,"Lever (On Block Top Points South When Off, Active)",minecraft:lever,face,floor,powered,true,,
 387,"Lever (On Block Top Points South When Off, Not Active)",minecraft:lever,face,floor,powered,false,,
 -1,Light Blue Carpet,minecraft:light_blue_carpet,,,,,,
@@ -617,7 +617,7 @@
 87,Wooden Slab,minecraft:oak_slab,type,bottom,,,,
 205,Oak Wood Slab (Bottom),minecraft:oak_slab,type,bottom,,,,
 325,Oak Wood Slab (Upper),minecraft:oak_slab,type,top,,,,
--1,Double Wooden Slab,minecraft:oak_slab,type,double,,,,
+79,Double Wooden Slab,minecraft:oak_slab,type,double,,,,
 199,Double Oak Wood Slab,minecraft:oak_slab,type,double,,,,
 101,"Oak Wood Stairs (East, Normal)",minecraft:oak_stairs,half,bottom,facing,east,,
 406,"Oak Wood Stairs (East, Upside-down)",minecraft:oak_stairs,half,top,facing,east,,
@@ -632,7 +632,7 @@
 871,"Wooden Trapdoor (East from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,west,open,true
 879,"Wooden Trapdoor (East from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,west,open,true
 868,"Wooden Trapdoor (North from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,east,open,false
--1,"Wooden Trapdoor (North from block, Closed, Top Half)",minecraft:oak_trapdoor,half,top,facing,east,open,false
+876,"Wooden Trapdoor (North from block, Closed, Top Half)",minecraft:oak_trapdoor,half,top,facing,east,open,false
 872,"Wooden Trapdoor (North from block, Open, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,east,open,true
 880,"Wooden Trapdoor (North from block, Open, Top Half)",minecraft:oak_trapdoor,half,top,facing,east,open,true
 866,"Wooden Trapdoor (South from block, Closed, Bottom half)",minecraft:oak_trapdoor,half,bottom,facing,south,open,false
@@ -695,7 +695,7 @@
 -1,Mob Head (),minecraft:player_head,,,,,,
 -1,Mob Head (On a Wall Facing East),minecraft:player_wall_head,facing,east,,,,
 -1,Mob Head (On a Wall Facing North),minecraft:player_wall_head,facing,north,,,,
--1,Mob Head (On a Wall Facing South),minecraft:player_wall_head,facing,south,,,,
+1424,Mob Head (On a Wall Facing South),minecraft:player_wall_head,facing,south,,,,
 -1,Mob Head (On a Wall Facing West),minecraft:player_wall_head,facing,west,,,,
 1422,Mob Head (On The Floor),minecraft:player_head,,,,,,
 17,Podzol,minecraft:podzol,,,,,,
@@ -838,36 +838,36 @@
 -1,Redstone Wire (Power:7),minecraft:redstone_wire,,,,,,
 731,Redstone Wire (Power:8),minecraft:redstone_wire,,,,,,
 732,Redstone Wire (Power:9),minecraft:redstone_wire,,,,,,
--1,"Redstone Repeater Block (off) (Facing East, Delay of 1 tick)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing East, Delay of 2 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing East, Delay of 3 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing East, Delay of 4 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing North, Delay of 1 tick",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing North, Delay of 2 tick",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing North, Delay of 3 tick",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing North, Delay of 4 tick",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing South, Delay of 1 tick",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing South, Delay of 2 tick",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing South, Delay of 3 tick",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing South, Delay of 4 tick",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing West, Delay of 1 tick)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing West, Delay of 2 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing West, Delay of 3 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (off) (Facing West, Delay of 4 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing East, Delay of 1 tick)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing East, Delay of 3 ticks)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing East, Delay of 4 ticks)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing North, Delay of 1 tick)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing North, Delay of 2 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing North, Delay of 3 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing North, Delay of 4 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing South, Delay of 1 tick)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing South, Delay of 3 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing South, Delay of 4 ticks",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing West, Delay of 1 tick)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing West, Delay of 2 ticks)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing West, Delay of 3 ticks)",minecraft:repeater,,,,,,
--1,"Redstone Repeater Block (on) (Facing West, Delay of 4 ticks)",minecraft:repeater,,,,,,
+802,"Redstone Repeater Block (off) (Facing East, Delay of 1 tick)",minecraft:repeater,facing,west,delay,1,,
+-1,"Redstone Repeater Block (off) (Facing East, Delay of 2 ticks",minecraft:repeater,facing,west,delay,2,,
+-1,"Redstone Repeater Block (off) (Facing East, Delay of 3 ticks",minecraft:repeater,facing,west,delay,3,,
+814,"Redstone Repeater Block (off) (Facing East, Delay of 4 ticks",minecraft:repeater,facing,west,delay,4,,
+143,"Redstone Repeater Block (off) (Facing North, Delay of 1 tick",minecraft:repeater,facing,south,delay,1,,
+-1,"Redstone Repeater Block (off) (Facing North, Delay of 2 tick",minecraft:repeater,facing,south,delay,2,,
+-1,"Redstone Repeater Block (off) (Facing North, Delay of 3 tick",minecraft:repeater,facing,south,delay,3,,
+-1,"Redstone Repeater Block (off) (Facing North, Delay of 4 tick",minecraft:repeater,facing,south,delay,4,,
+803,"Redstone Repeater Block (off) (Facing South, Delay of 1 tick",minecraft:repeater,facing,north,delay,1,,
+-1,"Redstone Repeater Block (off) (Facing South, Delay of 2 tick",minecraft:repeater,facing,north,delay,2,,
+-1,"Redstone Repeater Block (off) (Facing South, Delay of 3 tick",minecraft:repeater,facing,north,delay,3,,
+815,"Redstone Repeater Block (off) (Facing South, Delay of 4 tick",minecraft:repeater,facing,north,delay,4,,
+804,"Redstone Repeater Block (off) (Facing West, Delay of 1 tick)",minecraft:repeater,facing,east,delay,1,,
+-1,"Redstone Repeater Block (off) (Facing West, Delay of 2 ticks",minecraft:repeater,facing,east,delay,2,,
+-1,"Redstone Repeater Block (off) (Facing West, Delay of 3 ticks",minecraft:repeater,facing,east,delay,3,,
+816,"Redstone Repeater Block (off) (Facing West, Delay of 4 ticks",minecraft:repeater,facing,east,delay,4,,
+-1,"Redstone Repeater Block (on) (Facing East, Delay of 1 tick)",minecraft:repeater,facing,west,delay,1,powered,true
+-1,"Redstone Repeater Block (on) (Facing East, Delay of 3 ticks)",minecraft:repeater,facing,west,delay,3,powered,true
+-1,"Redstone Repeater Block (on) (Facing East, Delay of 4 ticks)",minecraft:repeater,facing,west,delay,4,powered,true
+-1,"Redstone Repeater Block (on) (Facing North, Delay of 1 tick)",minecraft:repeater,facing,south,delay,1,powered,true
+-1,"Redstone Repeater Block (on) (Facing North, Delay of 2 ticks",minecraft:repeater,facing,south,delay,2,powered,true
+-1,"Redstone Repeater Block (on) (Facing North, Delay of 3 ticks",minecraft:repeater,facing,south,delay,3,powered,true
+-1,"Redstone Repeater Block (on) (Facing North, Delay of 4 ticks",minecraft:repeater,facing,south,delay,4,powered,true
+-1,"Redstone Repeater Block (on) (Facing South, Delay of 1 tick)",minecraft:repeater,facing,north,delay,1,powered,true
+-1,"Redstone Repeater Block (on) (Facing South, Delay of 3 ticks",minecraft:repeater,facing,north,delay,3,powered,true
+-1,"Redstone Repeater Block (on) (Facing South, Delay of 4 ticks",minecraft:repeater,facing,north,delay,4,powered,true
+-1,"Redstone Repeater Block (on) (Facing West, Delay of 1 tick)",minecraft:repeater,facing,east,delay,1,powered,true
+-1,"Redstone Repeater Block (on) (Facing West, Delay of 2 ticks)",minecraft:repeater,facing,east,delay,2,powered,true
+-1,"Redstone Repeater Block (on) (Facing West, Delay of 3 ticks)",minecraft:repeater,facing,east,delay,3,powered,true
+-1,"Redstone Repeater Block (on) (Facing West, Delay of 4 ticks)",minecraft:repeater,facing,east,delay,4,powered,true
 920,"Flower (Rose Bush, Lower)",minecraft:rose_bush,half,lower,,,,
 26,Sand,minecraft:sand,,,,,,
 53,Sandstone,minecraft:sandstone,,,,,,
@@ -976,7 +976,7 @@
 -1,Stone Pressure Plate (Active),minecraft:stone_pressure_plate,powered,true,,,,
 118,Stone Pressure Plate (Unactive),minecraft:stone_pressure_plate,powered,false,,,,
 85,Stone Slab,minecraft:smooth_stone_slab,type,bottom,,,,
--1,(Stone) Wooden Slab (Upper),minecraft:stone_slab,,,,,,
+495,(Stone) Wooden Slab (Upper),minecraft:oak_slab,type,top,,,,
 493,Stone Slab (Upper),minecraft:smooth_stone_slab,type,top,,,,
 78,Double Stone Slab,minecraft:smooth_stone_slab,type,double,,,,
 131,Sugar Canes (Freshly Planted Cane),minecraft:sugar_cane,age,0,,,,
