@@ -151,13 +151,13 @@
 -1,Cactus (Age 7),minecraft:cactus,age,7,,,,
 -1,Cactus (Age 8),minecraft:cactus,age,8,,,,
 -1,Cactus (Age 9),minecraft:cactus,age,9,,,,
--1,Cake  (1 piece eaten),minecraft:cake,,,,,,
--1,Cake  (2 pieces eaten),minecraft:cake,,,,,,
--1,Cake Block,minecraft:cake,,,,,,
+-1,Cake  (1 piece eaten),minecraft:cake,bites,1,,,,
+-1,Cake  (2 pieces eaten),minecraft:cake,bites,2,,,,
+141,Cake Block,minecraft:cake,,,,,,
 -1,Carrots (Growth level 4),minecraft:carrots,age,4,,,,
 1661,Carrots (Growth level 7),minecraft:carrots,age,7,,,,
 192,Cauldron (Empty),minecraft:cauldron,,,,,,
--1,Cauldron (1/3 Filled),minecraft:water_cauldron,level,1,,,,
+913,Cauldron (1/3 Filled),minecraft:water_cauldron,level,1,,,,
 -1,Cauldron (2/3 Filled),minecraft:water_cauldron,level,2,,,,
 915,Cauldron (Fully Filled),minecraft:water_cauldron,level,3,,,,
 102,Chest,minecraft:chest,,,,,,
@@ -366,8 +366,8 @@
 1692,Grass Path,minecraft:dirt_path,,,,,,
 28,Gravel,minecraft:gravel,,,,,,
 1103,Gray Carpet,minecraft:gray_carpet,,,,,,
--1,Gray Stained Glass,minecraft:gray_stained_glass,,,,,,
--1,Gray Stained Glass Pane,minecraft:gray_stained_glass_pane,,,,,,
+153,Gray Stained Glass,minecraft:gray_stained_glass,,,,,,
+267,Gray Stained Glass Pane,minecraft:gray_stained_glass_pane,,,,,,
 -1,Gray Stained Clay,minecraft:gray_terracotta,,,,,,
 66,Gray Wool,minecraft:gray_wool,,,,,,
 1109,Green Carpet,minecraft:green_carpet,,,,,,
@@ -428,7 +428,7 @@
 889,"Iron Trapdoor (West from block, Closed, Top Half)",minecraft:iron_trapdoor,half,top,facing,north,open,false
 -1,"Iron Trapdoor (West from block, Open, Bottom half)",minecraft:iron_trapdoor,half,bottom,facing,north,open,true
 -1,"Iron Trapdoor (West from block, Open, Top Half)",minecraft:iron_trapdoor,half,top,facing,north,open,true
--1,Jack-o-Lantern (Facing East),minecraft:jack_o_lantern,facing,east,,,,
+1583,Jack-o-Lantern (Facing East),minecraft:jack_o_lantern,facing,east,,,,
 1582,Jack-o-Lantern (Facing North),minecraft:jack_o_lantern,facing,north,,,,
 -1,Jack-o-Lantern (Facing South),minecraft:jack_o_lantern,facing,south,,,,
 1581,Jack-o-Lantern (Facing West),minecraft:jack_o_lantern,facing,west,,,,
@@ -440,9 +440,9 @@
 -1,"Jungle Door (Lower, Facing North, Opened)",minecraft:jungle_door,facing,south,open,true,half,lower
 -1,"Jungle Door (Lower, Facing South, Closed)",minecraft:jungle_door,facing,north,open,false,half,lower
 -1,"Jungle Door (Lower, Facing South, Opened)",minecraft:jungle_door,facing,north,open,true,half,lower
--1,"Jungle Door (Lower, Facing West, Closed)",minecraft:jungle_door,facing,east,open,false,half,lower
+982,"Jungle Door (Lower, Facing West, Closed)",minecraft:jungle_door,facing,east,open,false,half,lower
 -1,"Jungle Door (Lower, Facing West, Opened)",minecraft:jungle_door,facing,east,open,true,half,lower
--1,"Jungle Door (Upper, Hinge Left, Unpowered)",minecraft:jungle_door,hinge,left,powered,false,half,upper
+990,"Jungle Door (Upper, Hinge Left, Unpowered)",minecraft:jungle_door,hinge,left,powered,false,half,upper
 -1,"Jungle Door (Upper, Hinge Right, Unpowered)",minecraft:jungle_door,hinge,right,powered,false,half,upper
 -1,Jungle Fence,minecraft:jungle_fence,,,,,,
 -1,"Jungle Fence Gate (Facing East, Closed)",minecraft:jungle_fence_gate,facing,east,open,false,,
@@ -524,7 +524,7 @@
 249,Lime Stained Clay,minecraft:lime_terracotta,,,,,,
 65,Lime Wool,minecraft:lime_wool,,,,,,
 -1,Magenta Carpet,minecraft:magenta_carpet,,,,,,
--1,Magenta Stained Glass,minecraft:magenta_stained_glass,,,,,,
+147,Magenta Stained Glass,minecraft:magenta_stained_glass,,,,,,
 -1,Magenta Stained Glass Pane,minecraft:magenta_stained_glass_pane,,,,,,
 246,Magenta Stained Clay,minecraft:magenta_terracotta,,,,,,
 42,Magenta Wool,minecraft:magenta_wool,,,,,,
@@ -738,8 +738,8 @@
 1092,Pumpkin (Facing East),minecraft:pumpkin,,,,,,
 -1,Pumpkin (Facing South),minecraft:pumpkin,,,,,,
 1672,Pumpkin Stem (Seventh Stage of Growth),minecraft:pumpkin_stem,age,7,,,,
--1,Purple Carpet,minecraft:purple_carpet,,,,,,
--1,Purple Stained Glass,minecraft:purple_stained_glass,,,,,,
+1106,Purple Carpet,minecraft:purple_carpet,,,,,,
+156,Purple Stained Glass,minecraft:purple_stained_glass,,,,,,
 270,Purple Stained Glass Pane,minecraft:purple_stained_glass_pane,,,,,,
 -1,Purple Stained Clay,minecraft:purple_terracotta,,,,,,
 43,Purple Wool,minecraft:purple_wool,,,,,,
@@ -907,11 +907,11 @@
 959,"Spruce Door (Upper, Hinge right, Unpowered)",minecraft:spruce_door,hinge,right,powered,false,half,upper
 964,"Spruce Foor (Lower, Facing East, Closed)",minecraft:spruce_door,facing,west,open,false,half,lower
 -1,"Spruce Foor (Lower, Facing East, Opened)",minecraft:spruce_door,facing,west,open,true,half,lower
--1,"Spruce Foor (Lower, Facing North, Closed)",minecraft:spruce_door,facing,south,open,false,half,lower
+963,"Spruce Foor (Lower, Facing North, Closed)",minecraft:spruce_door,facing,south,open,false,half,lower
 -1,"Spruce Foor (Lower, Facing North, Opened)",minecraft:spruce_door,facing,south,open,true,half,lower
 -1,"Spruce Foor (Lower, Facing South, Closed)",minecraft:spruce_door,facing,north,open,false,half,lower
 -1,"Spruce Foor (Lower, Facing South, Opened)",minecraft:spruce_door,facing,north,open,true,half,lower
--1,"Spruce Foor (Lower, Facing West, Closed)",minecraft:spruce_door,facing,east,open,false,half,lower
+962,"Spruce Foor (Lower, Facing West, Closed)",minecraft:spruce_door,facing,east,open,false,half,lower
 -1,"Spruce Foor (Lower, Facing West, Opened)",minecraft:spruce_door,facing,east,open,true,half,lower
 907,Spruce Fence,minecraft:spruce_fence,,,,,,
 1045,"Spruce Fence Gate (Facing East, Closed)",minecraft:spruce_fence_gate,facing,east,open,false,,
