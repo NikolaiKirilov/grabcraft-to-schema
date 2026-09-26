@@ -24,7 +24,7 @@ if robj.block_map.updated > 0:
     print(f"Blockmap updated: {robj.block_map.updated}")
     robj.block_map.save("blockmap_new.csv")
 
-out_name = robj.name.replace(" ", "_")
+out_name = robj.name.replace(" ", "_").replace(":", "_").replace("&amp;", "_")
 
 # Save the schema as litematica
 schem.save(out_name + ".litematic")
