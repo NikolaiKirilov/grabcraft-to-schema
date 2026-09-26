@@ -1,4 +1,4 @@
-import csv, requests, json
+import csv, requests, json, re
 from collections import defaultdict
 from litemapy import Schematic, Region, BlockState
 
@@ -68,6 +68,44 @@ class BlockMap:
         return f"minecraft:{ schema_block }"
 
 
+def get_renderobject_old(page):
+    # The index for the renderObject's info
+    render_object_i = page.find("myRenderObject")
+    # The end index for getting the renderObject's string
+    render_object_e = page.find('"', render_object_i)
+    # Store the url to the render object
+    render_object_url = "https://www.grabcraft.com/js/RenderObject/" + page[render_object_i:render_object_e]
+    # Download render object's javascript
+    ro_js = requests.get(render_object_url).text
+#     with open("dump_RenderObject.txt", "w", encoding="utf8") as f:
+#         f.write(ro_js)
+    # Get the part of the javascript containing the JSON
+    ro_text = ro_js[ro_js.find('{'):]
+    # Convert it to a json
+    return json.loads(ro_text)
+
+
+def get_renderobject(page):
+    fetch_list = re.findall(r'fetch\("(.+)"\)', page)
+    if not fetch_list:
+        print("RenderObject's fetch URL not found")
+        exit()
+    render_object_url = fetch_list[0]
+    print(render_object_url)
+
+    # Download render object's data
+    res = requests.get(render_object_url)
+
+    if not res.ok:
+        print(res.status_code)
+#         print(res.encoding, res.apparent_encoding)
+#         print(res.headers)
+        exit()
+
+    # Convert it to a json
+    return json.loads(res.text)
+
+
 class RenderObject:
     def __init__(self, url, north='north', block_map=None, dump=False):
         self.block_map = block_map or BlockMap()
@@ -75,40 +113,33 @@ class RenderObject:
         self.north = north.lower()
 
         # Getting the webpage itself
-        res = requests.get(self.url).text
+        page = requests.get(self.url).text
         if (dump):
             with open("dump_page.html", "w", encoding='utf-8') as f:
-                f.write(res)
-
-        # The index for the renderObject's info
-        render_object_i = res.find("myRenderObject")
-        # The end index for getting the renderObject's string
-        render_object_e = res.find('"', render_object_i)
-        # Store the url to the render object
-        render_object_url = "https://www.grabcraft.com/js/RenderObject/" + res[render_object_i:render_object_e]
+                f.write(page)
 
         # Get the index for the name
-        name_i = res.find("content-title")
-        name_i = res.find(">", name_i) + 1
+        name_i = page.find("content-title")
+        name_i = page.find(">", name_i) + 1
         # Get the end index for the name
-        name_e = res.find("<", name_i)
+        name_e = page.find("<", name_i)
         # Get the name
-        self.name = res[name_i:name_e].strip()
+        self.name = page[name_i:name_e].strip()
 
         # Get the index for the table containing the dimensions and tags
-        table_i = res.find("object_properties")
+        table_i = page.find("object_properties")
         # Get the metadata
         rows = ("Width", "Height", "Depth", "Tags")
         meta = []
         for row in rows:
             # Get the row
-            row_i = res.find(row, table_i)
+            row_i = page.find(row, table_i)
             # Get the index for the value
-            value_i = res.find('>', res.find("value", row_i)) + 1
+            value_i = page.find('>', page.find("value", row_i)) + 1
             # Get the end index for the value
-            value_e = res.find('<', value_i)
+            value_e = page.find('<', value_i)
             # Get the value
-            val = res[value_i:value_e]
+            val = page[value_i:value_e]
             # If the value is a list split it to represent it as such
             if val.isdigit():
                 val = int(val)
@@ -119,12 +150,8 @@ class RenderObject:
         self.tags = tuple(meta.pop())
         self.dims = tuple(meta)
 
-        # Download render object's javascript
-        ro_js = requests.get(render_object_url).text
-        # Get the part of the javascript containing the JSON
-        ro_text = ro_js[ro_js.find('{'):]
-        # Convert it to a json
-        ro_json = json.loads(ro_text)
+#         ro_json = get_renderobject_old(page)
+        ro_json = get_renderobject(page)
         if dump:
             with open("dump_RenderObject.json", "w") as f:
                 json.dump(ro_json, f, sort_keys=True, indent=4)
