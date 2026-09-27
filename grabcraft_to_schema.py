@@ -215,5 +215,29 @@ class RenderObject:
 
             mat_list[schema_block[schema_block.find(":")+1:]] += 1
 
+        for x, y, z in reg.block_positions():
+            b = reg.getblock(x, y, z)
+
+            # propagate properties of each door's half to its other half
+            if re.match("^minecraft:.+_door$", b.id):
+                props = dict(b.properties())
+                half = props.pop("half")
+                y_pair = y + 1 if half == "lower" else y - 1
+                b_pair = reg.getblock(x, y_pair, z)
+                reg.setblock(x, y_pair, z, b_pair.with_properties(**props))
+
+            # upper half of 2-tall plants is mostly wrong; overwrite it with lower half
+            plant_id = ["minecraft:large_fern",
+                        "minecraft:tall_grass",
+                        "minecraft:lilac",
+                        "minecraft:peony",
+                        "minecraft:pitcher_plant",
+                        "minecraft:rose_bush",
+                        "minecraft:sunflower"]
+            if b.id in plant_id:
+                props = dict(b.properties())
+                if props["half"] == "lower":
+                    reg.setblock(x, y + 1, z, b.with_properties(half="upper"))
+
         return schem, mat_list
 
