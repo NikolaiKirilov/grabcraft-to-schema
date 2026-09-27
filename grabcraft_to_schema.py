@@ -91,7 +91,7 @@ def get_renderobject(page):
         print("RenderObject's fetch URL not found")
         exit()
     render_object_url = fetch_list[0]
-    print(render_object_url)
+    # print(render_object_url)
 
     # Download render object's data
     res = requests.get(render_object_url)
@@ -125,6 +125,10 @@ class RenderObject:
         name_e = page.find("<", name_i)
         # Get the name
         self.name = page[name_i:name_e].strip()
+
+        # Get the author
+        author_list = re.findall(r'Author:&nbsp;(.+)<br', page)
+        self.author = author_list[0] if author_list else "n/a"
 
         # Get the index for the table containing the dimensions and tags
         table_i = page.find("object_properties")
@@ -200,7 +204,7 @@ class RenderObject:
         dims = self.map_dims()
         # Create the schema
         reg = Region(0, 0, 0, dims[0], dims[1], dims[2])
-        schem = reg.as_schematic(name=self.name, author="GrabCraft", description=self.url)
+        schem = reg.as_schematic(name=self.name, author=self.author, description=self.url)
 
         mat_list = defaultdict(int)
 

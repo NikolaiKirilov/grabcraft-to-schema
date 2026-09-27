@@ -16,7 +16,6 @@ args = parser.parse_args()
 
 # Download render object
 robj = RenderObject(args.url, north=args.f, dump=args.d)
-print("Done downloading!\n")
 
 # Convert render object to MC schema
 schem, materials_list = robj.to_schema()
@@ -24,15 +23,15 @@ if robj.block_map.updated > 0:
     print(f"Blockmap updated: {robj.block_map.updated}")
     robj.block_map.save("blockmap_new.csv")
 
-out_name = robj.name.replace(" ", "_").replace(":", "_").replace("&amp;", "_")
-
 # Save the schema as litematica
+out_name = robj.name.replace(" ", "_").replace(":", "_").replace("&amp;", "_")
 schem.save(out_name + ".litematic")
 
 # Save the schema statistics
 with open(out_name + ".info", "w") as f:
     print(" -= info =-", file=f)
     print("Name:", robj.name, file=f)
+    print("Author:", robj.author, file=f)
     print("URL:", robj.url, file=f)
     print("Facing North:", robj.north, file=f)
     print("Dimensions:", robj.dims, file=f)
@@ -49,3 +48,8 @@ with open(out_name + ".info", "w") as f:
     print(" -= materials =-", file=f)
     for material in sorted(materials_list):
         print(f"{materials_list[material]:6d}", material, file=f)
+
+# show basic info
+print("Name:", robj.name)
+print("Dimensions:", robj.dims)
+print("Blocks:", len(robj.blocks))
