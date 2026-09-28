@@ -21,9 +21,9 @@
 1669,Acacia Wood (No axis),minecraft:acacia_wood,,,,,,
 -1,Acacia Wood Plank,minecraft:acacia_planks,,,,,,
 -1,"Sapling (Acacia, Ready to grow)",minecraft:acacia_sapling,,,,,,
--1,Double Acacia Wood Slab,minecraft:acacia_slab,type,double,,,,
+203,Double Acacia Wood Slab,minecraft:acacia_slab,type,double,,,,
 -1,"(Acacia Wood, Upper)",minecraft:acacia_slab,type,top,,,,
--1,"(Acacia Wood, Bottom)",minecraft:acacia_slab,type,bottom,,,,
+209,"(Acacia Wood, Bottom)",minecraft:acacia_slab,type,bottom,,,,
 648,"Acacia Wood Stairs (East, Normal)",minecraft:acacia_stairs,half,bottom,facing,east,,
 -1,"Acacia Wood Stairs (East, Upside-down)",minecraft:acacia_stairs,half,top,facing,east,,
 651,"Acacia Wood Stairs (North, Normal)",minecraft:acacia_stairs,half,bottom,facing,north,,
@@ -68,8 +68,8 @@
 -1,"Birch Fence Gate (Facing North, Closed)",minecraft:birch_fence_gate,facing,north,open,false,,
 -1,"Birch Fence Gate (Facing South, Closed)",minecraft:birch_fence_gate,facing,south,open,false,,
 -1,"Birch Fence Gate (Facing West, Closed)",minecraft:birch_fence_gate,facing,west,open,false,,
--1,Birch Leaves,minecraft:birch_leaves,persistent,true,,,,
--1,Birch Leaves (No Decay),minecraft:birch_leaves,persistent,true,,,,
+35,Birch Leaves,minecraft:birch_leaves,persistent,true,,,,
+330,Birch Leaves (No Decay),minecraft:birch_leaves,persistent,true,,,,
 321,Birch Leaves (No Decay and Check Decay),minecraft:birch_leaves,persistent,true,,,,
 31,Birch Wood,minecraft:birch_log,axis,y,,,,
 431,Birch Wood (facing east/west),minecraft:birch_log,axis,x,,,,
@@ -132,7 +132,7 @@
 -1,"Brown Mushroom (Cap texture on top, south and west)",minecraft:brown_mushroom_block,,,,,,
 -1,"Brown Mushroom (Cap texture on top, west and north)",minecraft:brown_mushroom_block,,,,,,
 -1,Brown Mushroom  (stem  6 sides),minecraft:brown_mushroom_block,,,,,,
--1,Brown Stained Glass,minecraft:brown_stained_glass,,,,,,
+158,Brown Stained Glass,minecraft:brown_stained_glass,,,,,,
 -1,Brown Stained Glass Pane,minecraft:brown_stained_glass_pane,,,,,,
 256,Brown Stained Clay,minecraft:brown_terracotta,,,,,,
 70,Brown Wool,minecraft:brown_wool,,,,,,
@@ -192,11 +192,11 @@
 -1,"cocoa (Attached to the North, Third Stage)",minecraft:cocoa,,,,,,
 -1,"cocoa (Attached to the South, Third Stage)",minecraft:cocoa,,,,,,
 -1,"cocoa (Attached to the West, Third Stage)",minecraft:cocoa,,,,,,
--1,Command block (facing east),minecraft:command_block,,,,,,
--1,Command block (facing north),minecraft:command_block,,,,,,
--1,Command block (facing south),minecraft:command_block,,,,,,
--1,Command block (facing up),minecraft:command_block,,,,,,
--1,Command block (facing west),minecraft:command_block,,,,,,
+-1,Command block (facing east),minecraft:command_block,facing,east,,,,
+1703,Command block (facing north),minecraft:command_block,facing,north,,,,
+1704,Command block (facing south),minecraft:command_block,facing,south,,,,
+-1,Command block (facing up),minecraft:command_block,facing,up,,,,
+1705,Command block (facing west),minecraft:command_block,facing,west,,,,
 -1,"Redstone Comparator (Facing East, Unset, Powered)",minecraft:comparator,,,,,,
 -1,"Redstone Comparator (Facing East, Unset, Unpowered )",minecraft:comparator,,,,,,
 -1,"Redstone Comparator (Facing North, Unset, Unpowered )",minecraft:comparator,,,,,,
@@ -255,8 +255,8 @@
 534,"Dark Oak Wood Stairs (South, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,south,,
 529,"Dark Oak Wood Stairs (West, Normal)",minecraft:dark_oak_stairs,half,bottom,facing,west,,
 533,"Dark Oak Wood Stairs (West, Upside-down)",minecraft:dark_oak_stairs,half,top,facing,west,,
--1,Dark Prismarine,minecraft:dark_prismarine,,,,,,
--1,Daylight Sensor (Power level 0),minecraft:daylight_detector,,,,,,
+355,Dark Prismarine,minecraft:dark_prismarine,,,,,,
+238,Daylight Sensor (Power level 0),minecraft:daylight_detector,,,,,,
 -1,Daylight Sensor (Power level 1),minecraft:daylight_detector,,,,,,
 1346,Daylight Sensor (Power level 10),minecraft:daylight_detector,,,,,,
 -1,Daylight Sensor (Power level 11),minecraft:daylight_detector,,,,,,
@@ -432,7 +432,7 @@
 1582,Jack-o-Lantern (Facing North),minecraft:jack_o_lantern,facing,north,,,,
 -1,Jack-o-Lantern (Facing South),minecraft:jack_o_lantern,facing,south,,,,
 1581,Jack-o-Lantern (Facing West),minecraft:jack_o_lantern,facing,west,,,,
--1,Jukebox (Disc inside),minecraft:jukebox,has_record,true,,,,
+1295,Jukebox (Disc inside),minecraft:jukebox,has_record,true,,,,
 132,Jukebox,minecraft:jukebox,,,,,,
 -1,"Jungle Door (Lower, Facing East, Closed)",minecraft:jungle_door,facing,west,open,false,half,lower
 -1,"Jungle Door (Lower, Facing East, Opened)",minecraft:jungle_door,facing,west,open,true,half,lower
@@ -492,18 +492,18 @@
 393,"Lever (On Block Side Facing North, Active)",minecraft:lever,face,wall,facing,north,powered,true
 392,"Lever (On Block Side Facing South, Active)",minecraft:lever,face,wall,facing,south,powered,true
 346,"Lever (On Block Side Facing West, Active)",minecraft:lever,face,wall,facing,west,powered,true
-1325,"Lever (On Block Top Points East When Off, Active)",minecraft:lever,face,floor,powered,true,,
-390,"Lever (On Block Bottom Points East When Off, Active)",minecraft:lever,face,ceiling,powered,true,,
-117,"Lever (On Block Bottom Points East When Off, Not Active)",minecraft:lever,face,ceiling,powered,false,,
--1,"Lever (On Block Bottom Points South When Off, Active)",minecraft:lever,face,ceiling,powered,true,,
--1,"Lever (On Block Bottom Points South When Off, Not Active)",minecraft:lever,face,ceiling,powered,false,,
-383,"Lever (On Block Side Facing East, Not Active)",minecraft:lever,face,wall,facing,east,powered,false
-386,"Lever (On Block Side Facing North, Not Active)",minecraft:lever,face,wall,facing,north,powered,false
-385,"Lever (On Block Side Facing South, Not Active)",minecraft:lever,face,wall,facing,south,powered,false
-384,"Lever (On Block Side Facing West, Not Active)",minecraft:lever,face,wall,facing,west,powered,false
-388,"Lever (On Block Top Points East When Off, Not Active)",minecraft:lever,face,floor,powered,false,,
-1324,"Lever (On Block Top Points South When Off, Active)",minecraft:lever,face,floor,powered,true,,
-387,"Lever (On Block Top Points South When Off, Not Active)",minecraft:lever,face,floor,powered,false,,
+1325,"Lever (On Block Top Points East When Off, Active)",minecraft:lever,face,floor,facing,west,powered,true
+390,"Lever (On Block Bottom Points East When Off, Active)",minecraft:lever,face,ceiling,facing,west,powered,true
+117,"Lever (On Block Bottom Points East When Off, Not Active)",minecraft:lever,face,ceiling,facing,west,,
+-1,"Lever (On Block Bottom Points South When Off, Active)",minecraft:lever,face,ceiling,facing,north,powered,true
+-1,"Lever (On Block Bottom Points South When Off, Not Active)",minecraft:lever,face,ceiling,facing,north,,
+383,"Lever (On Block Side Facing East, Not Active)",minecraft:lever,face,wall,facing,east,,
+386,"Lever (On Block Side Facing North, Not Active)",minecraft:lever,face,wall,facing,north,,
+385,"Lever (On Block Side Facing South, Not Active)",minecraft:lever,face,wall,facing,south,,
+384,"Lever (On Block Side Facing West, Not Active)",minecraft:lever,face,wall,facing,west,,
+388,"Lever (On Block Top Points East When Off, Not Active)",minecraft:lever,face,floor,facing,west,,
+1324,"Lever (On Block Top Points South When Off, Active)",minecraft:lever,face,floor,facing,north,powered,true
+387,"Lever (On Block Top Points South When Off, Not Active)",minecraft:lever,face,floor,facing,north,,
 1099,Light Blue Carpet,minecraft:light_blue_carpet,,,,,,
 -1,Light Blue Stained Glass,minecraft:light_blue_stained_glass,,,,,,
 263,Light Blue Stained Glass Pane,minecraft:light_blue_stained_glass_pane,,,,,,
@@ -591,7 +591,7 @@
 1037,"Oak Fence Gate (Facing East, Closed)",minecraft:oak_fence_gate,facing,east,open,false,,
 1036,"Oak Fence Gate (Facing North, Closed)",minecraft:oak_fence_gate,facing,north,open,false,,
 181,"Oak Fence Gate (Facing South, Closed)",minecraft:oak_fence_gate,facing,south,open,false,,
--1,"Oak Fence Gate (Facing West, Closed)",minecraft:oak_fence_gate,facing,west,open,false,,
+1035,"Oak Fence Gate (Facing West, Closed)",minecraft:oak_fence_gate,facing,west,open,false,,
 33,Oak Leaves,minecraft:oak_leaves,persistent,true,,,,
 328,Oak Leaves (No Decay),minecraft:oak_leaves,persistent,true,,,,
 1196,Oak Leaves (Check Decay),minecraft:oak_leaves,,,,,,
@@ -703,7 +703,7 @@
 17,Podzol,minecraft:podzol,,,,,,
 11,Polished Andesite,minecraft:polished_andesite,,,,,,
 12,Polished Diorite,minecraft:polished_diorite,,,,,,
--1,Polished Granite,minecraft:polished_granite,,,,,,
+7,Polished Granite,minecraft:polished_granite,,,,,,
 282,Poppy,minecraft:poppy,,,,,,
 -1,Potatoes (Growth level 0),minecraft:potatoes,age,0,,,,
 -1,Potatoes (Growth level 1),minecraft:potatoes,age,1,,,,
@@ -804,7 +804,7 @@
 670,"Red Sandstone Stairs (South, Upside-down)",minecraft:red_sandstone_stairs,half,top,facing,south,,
 -1,"Red Sandstone Stairs (West, Normal)",minecraft:red_sandstone_stairs,half,bottom,facing,west,,
 -1,"Red Sandstone Stairs (West, Upside-down)",minecraft:red_sandstone_stairs,half,top,facing,west,,
--1,Red Stained Glass,minecraft:red_stained_glass,,,,,,
+160,Red Stained Glass,minecraft:red_stained_glass,,,,,,
 274,Red Stained Glass Pane,minecraft:red_stained_glass_pane,,,,,,
 258,Red Stained Clay,minecraft:red_terracotta,,,,,,
 1185,Red Tulip,minecraft:red_tulip,,,,,,
@@ -816,7 +816,7 @@
 740,Redstone Torch (off) (Facing East),minecraft:redstone_wall_torch,facing,east,lit,false,,
 743,Redstone Torch (off) (Facing North),minecraft:redstone_wall_torch,facing,north,lit,false,,
 742,Redstone Torch (off) (Facing South),minecraft:redstone_wall_torch,facing,south,lit,false,,
--1,Redstone Torch (off) (Facing Up),minecraft:redstone_torch,lit,false,,,,
+744,Redstone Torch (off) (Facing Up),minecraft:redstone_torch,lit,false,,,,
 741,Redstone Torch (off) (Facing West),minecraft:redstone_wall_torch,facing,west,lit,false,,
 -1,Redstone Torch (on) (),minecraft:redstone_torch,,,,,,
 488,Redstone Torch (on) (Facing East),minecraft:redstone_wall_torch,facing,east,,,,
@@ -850,7 +850,7 @@
 813,"Redstone Repeater Block (off) (Facing North, Delay of 4 tick",minecraft:repeater,facing,south,delay,4,,
 803,"Redstone Repeater Block (off) (Facing South, Delay of 1 tick",minecraft:repeater,facing,north,delay,1,,
 -1,"Redstone Repeater Block (off) (Facing South, Delay of 2 tick",minecraft:repeater,facing,north,delay,2,,
--1,"Redstone Repeater Block (off) (Facing South, Delay of 3 tick",minecraft:repeater,facing,north,delay,3,,
+811,"Redstone Repeater Block (off) (Facing South, Delay of 3 tick",minecraft:repeater,facing,north,delay,3,,
 815,"Redstone Repeater Block (off) (Facing South, Delay of 4 tick",minecraft:repeater,facing,north,delay,4,,
 804,"Redstone Repeater Block (off) (Facing West, Delay of 1 tick)",minecraft:repeater,facing,east,delay,1,,
 -1,"Redstone Repeater Block (off) (Facing West, Delay of 2 ticks",minecraft:repeater,facing,east,delay,2,,
@@ -859,10 +859,10 @@
 -1,"Redstone Repeater Block (on) (Facing East, Delay of 1 tick)",minecraft:repeater,facing,west,delay,1,powered,true
 -1,"Redstone Repeater Block (on) (Facing East, Delay of 3 ticks)",minecraft:repeater,facing,west,delay,3,powered,true
 -1,"Redstone Repeater Block (on) (Facing East, Delay of 4 ticks)",minecraft:repeater,facing,west,delay,4,powered,true
--1,"Redstone Repeater Block (on) (Facing North, Delay of 1 tick)",minecraft:repeater,facing,south,delay,1,powered,true
+144,"Redstone Repeater Block (on) (Facing North, Delay of 1 tick)",minecraft:repeater,facing,south,delay,1,powered,true
 -1,"Redstone Repeater Block (on) (Facing North, Delay of 2 ticks",minecraft:repeater,facing,south,delay,2,powered,true
 -1,"Redstone Repeater Block (on) (Facing North, Delay of 3 ticks",minecraft:repeater,facing,south,delay,3,powered,true
--1,"Redstone Repeater Block (on) (Facing North, Delay of 4 ticks",minecraft:repeater,facing,south,delay,4,powered,true
+797,"Redstone Repeater Block (on) (Facing North, Delay of 4 ticks",minecraft:repeater,facing,south,delay,4,powered,true
 -1,"Redstone Repeater Block (on) (Facing South, Delay of 1 tick)",minecraft:repeater,facing,north,delay,1,powered,true
 -1,"Redstone Repeater Block (on) (Facing South, Delay of 3 ticks",minecraft:repeater,facing,north,delay,3,powered,true
 799,"Redstone Repeater Block (on) (Facing South, Delay of 4 ticks",minecraft:repeater,facing,north,delay,4,powered,true
@@ -884,7 +884,7 @@
 614,"Sandstone Stairs (South, Upside-down)",minecraft:sandstone_stairs,half,top,facing,south,,
 609,"Sandstone Stairs (West, Normal)",minecraft:sandstone_stairs,half,bottom,facing,west,,
 613,"Sandstone Stairs (West, Upside-down)",minecraft:sandstone_stairs,half,top,facing,west,,
--1,Sea Lantern,minecraft:sea_lantern,,,,,,
+1353,Sea Lantern,minecraft:sea_lantern,,,,,,
 -1,Slime Block,minecraft:slime_block,,,,,,
 -1,Smooth Red Sandstone,minecraft:smooth_red_sandstone,,,,,,
 55,Smooth Sandstone,minecraft:smooth_sandstone,,,,,,
