@@ -33,9 +33,9 @@ with open(out_name + ".info", "w") as f:
     print("Name:", robj.name, file=f)
     print("Author:", robj.author, file=f)
     print("URL:", robj.url, file=f)
-    print("Facing North:", robj.north, file=f)
+    print("Facing:", robj.north, file=f)
     print("Dimensions:", robj.dims, file=f)
-    print("GrabCraft Tags:", robj.tags, file=f)
+    print("Tags:", robj.tags, file=f)
     print("Blocks:", len(robj.blocks), file=f)
 
     print(" -= blocks =-", file=f)

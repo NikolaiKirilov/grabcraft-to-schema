@@ -219,6 +219,7 @@ class RenderObject:
 
             mat_list[schema_block[schema_block.find(":")+1:]] += 1
 
+        # Fix for 2-tall blocks
         for x, y, z in reg.block_positions():
             b = reg.getblock(x, y, z)
 
