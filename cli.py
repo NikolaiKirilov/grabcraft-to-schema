@@ -15,15 +15,18 @@ args = parser.parse_args()
 
 
 # Download render object
+print("-> Downloading...")
 robj = RenderObject(args.url, north=args.f, dump=args.d)
 
 # Convert render object to MC schema
+print("-> Converting...")
 schem, materials_list = robj.to_schema()
 if robj.block_map.updated > 0:
     print(f"Blockmap updated: {robj.block_map.updated}")
     robj.block_map.save("blockmap_new.csv")
 
 # Save the schema as litematica
+print("-> Saving...")
 out_name = robj.name.replace(" ", "_").replace(":", "_").replace("&amp;", "_")
 schem.save(out_name + ".litematic")
 
