@@ -1,14 +1,14 @@
--1,"Acacia Door (Lower, Facing East, Closed)",minecraft:acacia_door,facing,west,open,false,half,lower
+996,"Acacia Door (Lower, Facing East, Closed)",minecraft:acacia_door,facing,west,open,false,half,lower
 -1,"Acacia Door (Lower, Facing East, Opened)",minecraft:acacia_door,facing,west,open,true,half,lower
--1,"Acacia Door (Lower, Facing North, Closed)",minecraft:acacia_door,facing,south,open,false,half,lower
+995,"Acacia Door (Lower, Facing North, Closed)",minecraft:acacia_door,facing,south,open,false,half,lower
 -1,"Acacia Door (Lower, Facing North, Opened)",minecraft:acacia_door,facing,south,open,true,half,lower
 -1,"Acacia Door (Lower, Facing South, Closed)",minecraft:acacia_door,facing,north,open,false,half,lower
 -1,"Acacia Door (Lower, Facing South, Opened)",minecraft:acacia_door,facing,north,open,true,half,lower
--1,"Acacia Door (Lower, Facing West, Closed)",minecraft:acacia_door,facing,east,open,false,half,lower
+994,"Acacia Door (Lower, Facing West, Closed)",minecraft:acacia_door,facing,east,open,false,half,lower
 -1,"Acacia Door (Lower, Facing West, Opened)",minecraft:acacia_door,facing,east,open,true,half,lower
 -1,"Acacia Door (Upper, Hinge Left, Powered)",minecraft:acacia_door,hinge,left,powered,true,half,upper
--1,"Acacia Door (Upper, Hinge Left, Unpowered)",minecraft:acacia_door,hinge,left,powered,false,half,upper
--1,"Acacia Door (Upper, Hinge Right, Unpowered)",minecraft:acacia_door,hinge,right,powered,false,half,upper
+1002,"Acacia Door (Upper, Hinge Left, Unpowered)",minecraft:acacia_door,hinge,left,powered,false,half,upper
+1003,"Acacia Door (Upper, Hinge Right, Unpowered)",minecraft:acacia_door,hinge,right,powered,false,half,upper
 -1,Acacia Fence,minecraft:acacia_fence,,,,,,
 -1,"Acacia Fence Gate (Facing North, Closed)",minecraft:acacia_fence_gate,facing,north,open,false,,
 -1,"Acacia Fence Gate (Facing West, Closed)",minecraft:acacia_fence_gate,facing,west,open,false,,
@@ -18,7 +18,7 @@
 279,Acacia Wood,minecraft:acacia_log,axis,y,,,,
 421,"Acacia Wood, Facing East/West",minecraft:acacia_log,axis,x,,,,
 -1,"Acacia Wood, Facing North/South",minecraft:acacia_log,axis,z,,,,
--1,Acacia Wood (No axis),minecraft:acacia_wood,,,,,,
+1669,Acacia Wood (No axis),minecraft:acacia_wood,,,,,,
 -1,Acacia Wood Plank,minecraft:acacia_planks,,,,,,
 -1,"Sapling (Acacia, Ready to grow)",minecraft:acacia_sapling,,,,,,
 -1,Double Acacia Wood Slab,minecraft:acacia_slab,type,double,,,,
@@ -52,13 +52,13 @@
 -1,Barrier,minecraft:barrier,,,,,,
 222,Beacon,minecraft:beacon,,,,,,
 38,Bedrock,minecraft:bedrock,,,,,,
--1,"Birch Door (Lower, Facing East, Closed)",minecraft:birch_door,half,lower,facing,west,open,false
+972,"Birch Door (Lower, Facing East, Closed)",minecraft:birch_door,half,lower,facing,west,open,false
 -1,"Birch Door (Lower, Facing East, Opened)",minecraft:birch_door,half,lower,facing,west,open,true
 971,"Birch Door (Lower, Facing North, Closed)",minecraft:birch_door,half,lower,facing,south,open,false
 -1,"Birch Door (Lower, Facing North, Opened)",minecraft:birch_door,half,lower,facing,south,open,true
 973,"Birch Door (Lower, Facing South, Closed)",minecraft:birch_door,half,lower,facing,north,open,false
--1,"Birch Door (Lower, Facing South, Opened)",minecraft:birch_door,half,lower,facing,north,open,true
--1,"Birch Door (Lower, Facing West, Closed)",minecraft:birch_door,half,lower,facing,east,open,false
+977,"Birch Door (Lower, Facing South, Opened)",minecraft:birch_door,half,lower,facing,north,open,true
+970,"Birch Door (Lower, Facing West, Closed)",minecraft:birch_door,half,lower,facing,east,open,false
 -1,"Birch Door (Upper, Hinge Left, Powered)",minecraft:birch_door,half,upper,hinge,left,powered,true
 978,"Birch Door (Upper, Hinge Left, Unpowered)",minecraft:birch_door,half,upper,hinge,left,powered,false
 -1,"Birch Door (Upper, Hinge Right, Powered)",minecraft:birch_door,half,upper,hinge,right,powered,true
@@ -99,9 +99,9 @@
 271,Blue Stained Glass Pane,minecraft:blue_stained_glass_pane,,,,,,
 255,Blue Stained Clay,minecraft:blue_terracotta,,,,,,
 69,Blue Wool,minecraft:blue_wool,,,,,,
--1,Bone Block (Oriented east-west),minecraft:bone_block,,,,,,
--1,Bone Block (Oriented north-south),minecraft:bone_block,,,,,,
--1,Bone Block (Oriented vertically),minecraft:bone_block,,,,,,
+1726,Bone Block (Oriented east-west),minecraft:bone_block,axis,x,,,,
+1728,Bone Block (Oriented north-south),minecraft:bone_block,axis,z,,,,
+1727,Bone Block (Oriented vertically),minecraft:bone_block,axis,y,,,,
 95,Bookshelf,minecraft:bookshelf,,,,,,
 -1,"Brewing Stand (Slot 1 Active, Slot 2 Active, Slot 3 Active)",minecraft:brewing_stand,has_bottle_0,true,has_bottle_1,true,has_bottle_2,true
 -1,"Brewing Stand (Slot 1 Active, Slot 2 Active, Slot 3 Unactive",minecraft:brewing_stand,has_bottle_0,true,has_bottle_1,true,,
@@ -166,7 +166,7 @@
 523,Chest (South),minecraft:chest,facing,south,,,,
 524,Chest (West),minecraft:chest,facing,west,,,,
 242,Chiseled Quartz Block,minecraft:chiseled_quartz_block,,,,,,
--1,Chiseled Red Sandstone,minecraft:chiseled_red_sandstone,,,,,,
+1248,Chiseled Red Sandstone,minecraft:chiseled_red_sandstone,,,,,,
 -1,Double Sandstone Slab Seamless,minecraft:chiseled_sandstone,,,,,,
 54,Chiseled Sandstone,minecraft:chiseled_sandstone,,,,,,
 172,Chiseled Stone Bricks,minecraft:chiseled_stone_bricks,,,,,,
@@ -204,7 +204,7 @@
 -1,"Redstone Comparator (Facing West, Substraction mode, Powered",minecraft:comparator,,,,,,
 171,Cracked Stone Bricks,minecraft:cracked_stone_bricks,,,,,,
 106,Crafting Table,minecraft:crafting_table,,,,,,
--1,Cyan Carpet,minecraft:cyan_carpet,,,,,,
+1105,Cyan Carpet,minecraft:cyan_carpet,,,,,,
 155,Cyan Stained Glass,minecraft:cyan_stained_glass,,,,,,
 269,Cyan Stained Glass Pane,minecraft:cyan_stained_glass_pane,,,,,,
 253,Cyan Stained Clay,minecraft:cyan_terracotta,,,,,,
@@ -314,18 +314,18 @@
 -1,"End Portal Frame (Vectors to the South, Empty)",minecraft:end_portal_frame,facing,south,,,,
 954,"End Portal Frame (Vectors to the South, Eye of Ender)",minecraft:end_portal_frame,facing,south,eye,true,,
 -1,"End Portal Frame (Vectors to the West, Eye of Ender)",minecraft:end_portal_frame,facing,west,eye,true,,
--1,End Rod (Facing Down),minecraft:end_rod,facing,down,,,,
+1693,End Rod (Facing Down),minecraft:end_rod,facing,down,,,,
 1698,End Rod (Facing East),minecraft:end_rod,facing,east,,,,
--1,End Rod (Facing North),minecraft:end_rod,facing,north,,,,
--1,End Rod (Facing South),minecraft:end_rod,facing,south,,,,
+1695,End Rod (Facing North),minecraft:end_rod,facing,north,,,,
+1696,End Rod (Facing South),minecraft:end_rod,facing,south,,,,
 -1,End Rod (Facing Up),minecraft:end_rod,facing,up,,,,
 -1,End Rod (Facing West),minecraft:end_rod,facing,west,,,,
 195,End Stone,minecraft:end_stone,,,,,,
 -1,End Stone Bricks,minecraft:end_stone_bricks,,,,,,
--1,Ender Chest (Facing East),minecraft:ender_chest,facing,east,,,,
+949,Ender Chest (Facing East),minecraft:ender_chest,facing,east,,,,
 -1,Ender Chest (Facing North),minecraft:ender_chest,facing,north,,,,
 947,Ender Chest (Facing South),minecraft:ender_chest,facing,south,,,,
--1,Ender Chest (Facing West),minecraft:ender_chest,facing,west,,,,
+948,Ender Chest (Facing West),minecraft:ender_chest,facing,west,,,,
 108,Farmland (Dry Land),minecraft:farmland,moisture,0,,,,
 -1,Farmland (Wet level 1),minecraft:farmland,moisture,1,,,,
 -1,Farmland (Wet level 2),minecraft:farmland,moisture,2,,,,
@@ -385,7 +385,7 @@
 1389,"Hopper (Output Facing South, Disabled)",minecraft:hopper,facing,south,enabled,false,,
 1390,"Hopper (Output Facing West, Disabled)",minecraft:hopper,facing,west,enabled,false,,
 1392,"Hopper (Output Facing Down, Activated)",minecraft:hopper,facing,down,enabled,true,,
--1,"Hopper (Output Facing East, Activated)",minecraft:hopper,facing,east,enabled,true,,
+1397,"Hopper (Output Facing East, Activated)",minecraft:hopper,facing,east,enabled,true,,
 -1,"Hopper (Output Facing North, Activated)",minecraft:hopper,facing,north,enabled,true,,
 1395,"Hopper (Output Facing South, Activated)",minecraft:hopper,facing,south,enabled,true,,
 1396,"Hopper (Output Facing West, Activated)",minecraft:hopper,facing,west,enabled,true,,
@@ -504,7 +504,7 @@
 388,"Lever (On Block Top Points East When Off, Not Active)",minecraft:lever,face,floor,powered,false,,
 1324,"Lever (On Block Top Points South When Off, Active)",minecraft:lever,face,floor,powered,true,,
 387,"Lever (On Block Top Points South When Off, Not Active)",minecraft:lever,face,floor,powered,false,,
--1,Light Blue Carpet,minecraft:light_blue_carpet,,,,,,
+1099,Light Blue Carpet,minecraft:light_blue_carpet,,,,,,
 -1,Light Blue Stained Glass,minecraft:light_blue_stained_glass,,,,,,
 263,Light Blue Stained Glass Pane,minecraft:light_blue_stained_glass_pane,,,,,,
 247,Light Blue Stained Clay,minecraft:light_blue_terracotta,,,,,,
@@ -542,9 +542,9 @@
 170,Mossy Stone Bricks,minecraft:mossy_stone_bricks,,,,,,
 -1,Mycelium,minecraft:mycelium,,,,,,
 187,Nether Brick Fence,minecraft:nether_brick_fence,,,,,,
--1,Double Nether Brick Slab,minecraft:nether_brick_slab,type,double,,,,
+83,Double Nether Brick Slab,minecraft:nether_brick_slab,type,double,,,,
 91,Nether Brick Slab,minecraft:nether_brick_slab,type,bottom,,,,
--1,Nether Brick Slab (Upper),minecraft:nether_brick_slab,type,top,,,,
+499,Nether Brick Slab (Upper),minecraft:nether_brick_slab,type,top,,,,
 188,"Nether Brick Stairs (East, Normal)",minecraft:nether_brick_stairs,half,bottom,facing,east,,
 604,"Nether Brick Stairs (East, Upside-down)",minecraft:nether_brick_stairs,half,top,facing,east,,
 603,"Nether Brick Stairs (North, Normal)",minecraft:nether_brick_stairs,half,bottom,facing,north,,
@@ -651,7 +651,7 @@
 327,Wall-mounted Sign Block west-northwest,minecraft:oak_wall_sign,facing,east,,,,
 435,Oak Wood (only bark),minecraft:oak_wood,,,,,,
 97,Obsidian,minecraft:obsidian,,,,,,
--1,Orange Carpet,minecraft:orange_carpet,,,,,,
+1097,Orange Carpet,minecraft:orange_carpet,,,,,,
 -1,Orange Stained Glass,minecraft:orange_stained_glass,,,,,,
 261,Orange Stained Glass Pane,minecraft:orange_stained_glass_pane,,,,,,
 245,Orange Stained Clay,minecraft:orange_terracotta,,,,,,
@@ -660,7 +660,7 @@
 285,Oxeye Daisy,minecraft:oxeye_daisy,,,,,,
 -1,Packed Ice,minecraft:packed_ice,,,,,,
 921,"Flower (Peony, Lower)",minecraft:peony,half,lower,,,,
--1,Pink Carpet,minecraft:pink_carpet,,,,,,
+1102,Pink Carpet,minecraft:pink_carpet,,,,,,
 -1,Pink Stained Glass,minecraft:pink_stained_glass,,,,,,
 266,Pink Stained Glass Pane,minecraft:pink_stained_glass_pane,,,,,,
 250,Pink Stained Clay,minecraft:pink_terracotta,,,,,,
@@ -695,7 +695,7 @@
 -1,"Piston Extension (Facing up, Not Extended)",minecraft:piston_head,facing,up,,,,
 -1,"Piston Extension (Facing down, Not Extended)",minecraft:piston_head,facing,down,,,,
 -1,Mob Head (),minecraft:player_head,,,,,,
--1,Mob Head (On a Wall Facing East),minecraft:player_wall_head,facing,west,,,,
+1425,Mob Head (On a Wall Facing East),minecraft:player_wall_head,facing,west,,,,
 1423,Mob Head (On a Wall Facing North),minecraft:player_wall_head,facing,south,,,,
 1424,Mob Head (On a Wall Facing South),minecraft:player_wall_head,facing,north,,,,
 1426,Mob Head (On a Wall Facing West),minecraft:player_wall_head,facing,east,,,,
@@ -733,15 +733,15 @@
 -1,"Powered Rail (Sloped, Ascending to the West, Not Active)",minecraft:powered_rail,shape,ascending_west,,,,
 -1,Prismarine,minecraft:prismarine,,,,,,
 -1,Prismarine Bricks,minecraft:prismarine_bricks,,,,,,
--1,Pumpkin (Facing North),minecraft:pumpkin,,,,,,
-1090,Pumpkin (Facing West),minecraft:pumpkin,,,,,,
-1092,Pumpkin (Facing East),minecraft:pumpkin,,,,,,
--1,Pumpkin (Facing South),minecraft:pumpkin,,,,,,
+-1,Pumpkin (Facing North),minecraft:pumpkin,facing,north,,,,
+1090,Pumpkin (Facing West),minecraft:pumpkin,facing,west,,,,
+1092,Pumpkin (Facing East),minecraft:pumpkin,facing,east,,,,
+134,Pumpkin (Facing South),minecraft:pumpkin,facing,south,,,,
 1672,Pumpkin Stem (Seventh Stage of Growth),minecraft:pumpkin_stem,age,7,,,,
 1106,Purple Carpet,minecraft:purple_carpet,,,,,,
 156,Purple Stained Glass,minecraft:purple_stained_glass,,,,,,
 270,Purple Stained Glass Pane,minecraft:purple_stained_glass_pane,,,,,,
--1,Purple Stained Clay,minecraft:purple_terracotta,,,,,,
+254,Purple Stained Clay,minecraft:purple_terracotta,,,,,,
 43,Purple Wool,minecraft:purple_wool,,,,,,
 -1,Purpur Block,minecraft:purpur_block,,,,,,
 -1,Purpur Double Slab,minecraft:purpur_slab,,,,,,
@@ -792,18 +792,18 @@
 -1,"Red Mushroom Block (Stem texture on all sides, pores on top and b)",minecraft:red_mushroom_block,,,,,,
 -1,Red Mushroom Block (Stem texture on all six sides),minecraft:red_mushroom_block,,,,,,
 27,Red Sand,minecraft:red_sand,,,,,,
--1,Red Sandstone,minecraft:red_sandstone,,,,,,
--1,Double Red Sandstone Slab,minecraft:red_sandstone_slab,,,,,,
--1,"Red Sandstone Slab, Bottom",minecraft:red_sandstone_slab,,,,,,
--1,"Red Sandstone Slab, Upper",minecraft:red_sandstone_slab,,,,,,
--1,"Red Sandstone Stairs (East, Normal)",minecraft:red_sandstone_stairs,,,,,,
--1,"Red Sandstone Stairs (East, Upside-down)",minecraft:red_sandstone_stairs,,,,,,
--1,"Red Sandstone Stairs (North, Normal)",minecraft:red_sandstone_stairs,,,,,,
--1,"Red Sandstone Stairs (North, Upside-down)",minecraft:red_sandstone_stairs,,,,,,
--1,"Red Sandstone Stairs (South, Normal)",minecraft:red_sandstone_stairs,,,,,,
--1,"Red Sandstone Stairs (South, Upside-down)",minecraft:red_sandstone_stairs,,,,,,
--1,"Red Sandstone Stairs (West, Normal)",minecraft:red_sandstone_stairs,,,,,,
--1,"Red Sandstone Stairs (West, Upside-down)",minecraft:red_sandstone_stairs,,,,,,
+1247,Red Sandstone,minecraft:red_sandstone,,,,,,
+-1,Double Red Sandstone Slab,minecraft:red_sandstone_slab,type,double,,,,
+-1,"Red Sandstone Slab, Bottom",minecraft:red_sandstone_slab,type,bottom,,,,
+-1,"Red Sandstone Slab, Upper",minecraft:red_sandstone_slab,type,top,,,,
+-1,"Red Sandstone Stairs (East, Normal)",minecraft:red_sandstone_stairs,half,bottom,facing,east,,
+-1,"Red Sandstone Stairs (East, Upside-down)",minecraft:red_sandstone_stairs,half,top,facing,east,,
+-1,"Red Sandstone Stairs (North, Normal)",minecraft:red_sandstone_stairs,half,bottom,facing,north,,
+671,"Red Sandstone Stairs (North, Upside-down)",minecraft:red_sandstone_stairs,half,top,facing,north,,
+-1,"Red Sandstone Stairs (South, Normal)",minecraft:red_sandstone_stairs,half,bottom,facing,south,,
+670,"Red Sandstone Stairs (South, Upside-down)",minecraft:red_sandstone_stairs,half,top,facing,south,,
+-1,"Red Sandstone Stairs (West, Normal)",minecraft:red_sandstone_stairs,half,bottom,facing,west,,
+-1,"Red Sandstone Stairs (West, Upside-down)",minecraft:red_sandstone_stairs,half,top,facing,west,,
 -1,Red Stained Glass,minecraft:red_stained_glass,,,,,,
 274,Red Stained Glass Pane,minecraft:red_stained_glass_pane,,,,,,
 258,Red Stained Clay,minecraft:red_terracotta,,,,,,
@@ -906,10 +906,10 @@
 -1,"Spruce Door (Upper, Hinge right, Powered)",minecraft:spruce_door,hinge,right,powered,true,half,upper
 959,"Spruce Door (Upper, Hinge right, Unpowered)",minecraft:spruce_door,hinge,right,powered,false,half,upper
 964,"Spruce Foor (Lower, Facing East, Closed)",minecraft:spruce_door,facing,west,open,false,half,lower
--1,"Spruce Foor (Lower, Facing East, Opened)",minecraft:spruce_door,facing,west,open,true,half,lower
+968,"Spruce Foor (Lower, Facing East, Opened)",minecraft:spruce_door,facing,west,open,true,half,lower
 963,"Spruce Foor (Lower, Facing North, Closed)",minecraft:spruce_door,facing,south,open,false,half,lower
 -1,"Spruce Foor (Lower, Facing North, Opened)",minecraft:spruce_door,facing,south,open,true,half,lower
--1,"Spruce Foor (Lower, Facing South, Closed)",minecraft:spruce_door,facing,north,open,false,half,lower
+965,"Spruce Foor (Lower, Facing South, Closed)",minecraft:spruce_door,facing,north,open,false,half,lower
 -1,"Spruce Foor (Lower, Facing South, Opened)",minecraft:spruce_door,facing,north,open,true,half,lower
 962,"Spruce Foor (Lower, Facing West, Closed)",minecraft:spruce_door,facing,east,open,false,half,lower
 -1,"Spruce Foor (Lower, Facing West, Opened)",minecraft:spruce_door,facing,east,open,true,half,lower
@@ -1080,7 +1080,7 @@
 1100,Yellow Carpet,minecraft:yellow_carpet,,,,,,
 -1,Yellow Stained Glass,minecraft:yellow_stained_glass,,,,,,
 264,Yellow Stained Glass Pane,minecraft:yellow_stained_glass_pane,,,,,,
--1,Yellow Stained Clay,minecraft:yellow_terracotta,,,,,,
+248,Yellow Stained Clay,minecraft:yellow_terracotta,,,,,,
 64,Yellow Wool,minecraft:yellow_wool,,,,,,
 372,Wall-Mounted Banner (west-northwest),minecraft:white_wall_banner,facing,east,,,,
 371,Wall-Mounted Banner (west),minecraft:white_wall_banner,facing,west,,,,
