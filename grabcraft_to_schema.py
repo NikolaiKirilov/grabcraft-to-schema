@@ -229,7 +229,10 @@ class RenderObject:
                 half = props.pop("half")
                 y_pair = y + 1 if half == "lower" else y - 1
                 b_pair = reg.getblock(x, y_pair, z)
-                reg.setblock(x, y_pair, z, b_pair.with_properties(**props))
+                if b.id == b_pair.id:
+                    reg.setblock(x, y_pair, z, b_pair.with_properties(**props))
+                else:
+                    print(f"Door block mismatch: {b.id} -> {b_pair.id}")
 
             # upper half of 2-tall plants is mostly wrong; overwrite it with lower half
             plant_id = ["minecraft:large_fern",
