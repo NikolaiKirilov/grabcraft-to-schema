@@ -24,14 +24,12 @@ Upon succesful conversion CLI will output 2 files:
 - a text file with essential info about the structure, a list (histogram) of the blocks in GrabCraft format and a list of "materials" needed for the build.
 
 ## RenderObjects?
-GrabCraft, instead of using things like .schematic or .litematic uses its own custom format called RenderObjects. If you're for instance, scraping the web and don't know what data you need to keep or generally want to be able to do stuff without having to worry about certain stuff breaking when dealing with GrabCraft's custom format, I recommend that you guys try to save `RenderObject`'s and their data. The `RenderObject.obj` field is what contains most of the data, which can easily be converted to a json as seen in the library itself since it's just a variable being set to a javascript dictionary which means that it's a json as soon as the javascript variable setting part is removed.
+GrabCraft, instead of using things like .schematic or .litematic uses its own custom format called RenderObjects. If you're for instance, scraping the web and don't know what data you need to keep or generally want to be able to do stuff without having to worry about certain stuff breaking when dealing with GrabCraft's custom format, I recommend saving `RenderObject`'s data. All of the blocks related info for a build is stored in a JSON formatted file which is fetched from its own fixed URL when the build's page is displayed in the browser.
 
 ## Orientation
 By the looks of it, orientation of each block is kept as it was in the original build from which the blueprint was created. On the other hand, blueprint itself is often re-oriented (publishing guidelines?) and coordinates for each block are assigned according to their location in the published blueprint. If blocks are positioned in a Minecraft world according to those coordinates, the structure will be oriented such that bottom side of the blueprint is facing north. If the orientation of the original build was different, all the individual blocks will be facing the wrong direction.
 
-In order to have each block oriented correctly relative to the build, the library transforms the coordinates specified in the blueprint back to the coordinates of original build. The original orientation of the build is given by the compass in the upper right corner of the blueprint. Both CLI and RenderObject assume the north arrow of the compass is pointing down (toward the bottom of the blueprint). If it is different for particular blueprint, the cardinal direction displayed for the compass down arrow must be specified explicitly (`-f` option of CLI or `north` argument of the RenderObject constructor).
-
-Technically it is possible to extract compass info from the webpage data automatically but the compass itself is unreliable. There are cases where it does not match the actual blocks orientation and in general must be verified manually anyway, e.g. [Small Wooden Cabin 4](https://www.grabcraft.com/minecraft/simple-starter-house-2/wooden-houses#blueprints).
+In order to have blocks' orientation consistent with the build, the library transforms the coordinates specified in the blueprint back to the coordinates of original build. Unfortunately, the original orientation of the build is not given anywhere in the the build's data. Basically one has to convert first with the default (north) facing, load the result into Litematica or any of the online viewers and look for directional blocks like stairs, beds, wall-mounted buttons/trapdoors/ladders/torches etc. to see if they are facing the right direction. If not, the build has to be converted once more specifying the orientation explicitly (`-f` option of CLI or `north` argument of the RenderObject constructor).
 
 ## Block Mapping File
 (under construction)
@@ -51,5 +49,4 @@ As I only tested this on builds that I'm interested in personally, the library s
 - `BlockMap.save(self, filename)`: the method to save blockmap data to CSV file.
 
 ## To Do
-- After conversion, update 2-tall objects (doors, flowers) for consitency
 - Convert to Bedrock's mcstructure format
