@@ -27,7 +27,7 @@ if robj.block_map.updated > 0:
 
 # Save the schema as litematica
 print("-> Saving...")
-out_name = robj.name.replace(" ", "_").replace(":", "_").replace("&amp;", "_")
+out_name = robj.name.replace(" ", "_").replace(":", "_").replace("/", "_").replace("&amp;", "_")
 schem.save(out_name + ".litematic")
 
 # Save the schema statistics
