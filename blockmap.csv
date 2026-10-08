@@ -13,8 +13,8 @@
 -1,"Acacia Fence Gate (Facing North, Closed)",minecraft:acacia_fence_gate,facing,north,open,false,,
 -1,"Acacia Fence Gate (Facing West, Closed)",minecraft:acacia_fence_gate,facing,west,open,false,,
 286,Acacia Leaves,minecraft:acacia_leaves,persistent,true,,,,
--1,Acacia Leaves (No Decay),minecraft:acacia_leaves,persistent,true,,,,
--1,Acacia Leaves (No Decay and Check Decay),minecraft:acacia_leaves,persistent,true,,,,
+1190,Acacia Leaves (No Decay),minecraft:acacia_leaves,persistent,true,,,,
+1194,Acacia Leaves (No Decay and Check Decay),minecraft:acacia_leaves,persistent,true,,,,
 279,Acacia Wood,minecraft:acacia_log,axis,y,,,,
 421,"Acacia Wood, Facing East/West",minecraft:acacia_log,axis,x,,,,
 423,"Acacia Wood, Facing North/South",minecraft:acacia_log,axis,z,,,,
@@ -31,7 +31,7 @@
 650,"Acacia Wood Stairs (South, Normal)",minecraft:acacia_stairs,half,bottom,facing,south,,
 -1,"Acacia Wood Stairs (South, Upside-down)",minecraft:acacia_stairs,half,top,facing,south,,
 649,"Acacia Wood Stairs (West, Normal)",minecraft:acacia_stairs,half,bottom,facing,west,,
--1,"Acacia Wood Stairs (West, Upside-down)",minecraft:acacia_stairs,half,top,facing,west,,
+653,"Acacia Wood Stairs (West, Upside-down)",minecraft:acacia_stairs,half,top,facing,west,,
 -1,"Activator Rail (Flat North-South, Not Active)",minecraft:activator_rail,,,,,,
 -1,"Activator Rail (Flat West-East, Not Active)",minecraft:activator_rail,,,,,,
 1184,Allium,minecraft:allium,,,,,,
@@ -240,10 +240,10 @@
 -1,Dark Oak Wood (No Axis),minecraft:dark_oak_wood,,,,,,
 25,Dark Oak Wood Plank,minecraft:dark_oak_planks,,,,,,
 -1,"Sapling (Dark Oak, Ready to grow)",minecraft:dark_oak_sapling,,,,,,
--1,Standing Sign (NorthEast),minecraft:oak_sign,rotation,10,,,,
--1,Standing Sign (NorthWest),minecraft:oak_sign,rotation,6,,,,
--1,Standing Sign (SouthEast),minecraft:oak_sign,rotation,14,,,,
--1,Standing Sign (SouthWest),minecraft:oak_sign,rotation,2,,,,
+1028,Standing Sign (NorthEast),minecraft:oak_sign,rotation,10,,,,
+1024,Standing Sign (NorthWest),minecraft:oak_sign,rotation,6,,,,
+1032,Standing Sign (SouthEast),minecraft:oak_sign,rotation,14,,,,
+1020,Standing Sign (SouthWest),minecraft:oak_sign,rotation,2,,,,
 204,Double Dark Oak Wood Slab,minecraft:dark_oak_slab,type,double,,,,
 210,Dark Oak Wood Slab (Bottom),minecraft:dark_oak_slab,type,bottom,,,,
 1140,Dark Oak Wood Slab (Upper),minecraft:dark_oak_slab,type,top,,,,
@@ -272,7 +272,7 @@
 1343,Daylight Sensor (Power level 7),minecraft:daylight_detector,,,,,,
 1344,Daylight Sensor (Power level 8),minecraft:daylight_detector,,,,,,
 -1,Daylight Sensor (Power level 9),minecraft:daylight_detector,,,,,,
--1,Dead Shrub,minecraft:dead_bush,,,,,,
+59,Dead Shrub,minecraft:dead_bush,,,,,,
 1352,Dead Bush,minecraft:dead_bush,,,,,,
 1250,"Detector Rail (Flat, North-South, Unactive)",minecraft:detector_rail,,,,,,
 1251,"Detector Rail (Flat, West-East, Unactive)",minecraft:detector_rail,shape,east_west,,,,
@@ -298,7 +298,7 @@
 1269,"Dropper (Facing East, Unactive)",minecraft:dropper,facing,east,,,,
 -1,"Dropper (Facing North, Activated)",minecraft:dropper,facing,north,triggered,true,,
 1266,"Dropper (Facing North, Unactive)",minecraft:dropper,facing,north,,,,
--1,"Dropper (Facing Up, Unactive)",minecraft:dropper,facing,up,,,,
+1265,"Dropper (Facing Up, Unactive)",minecraft:dropper,facing,up,,,,
 -1,"Dropper (Facing West, Activated)",minecraft:dropper,facing,west,triggered,true,,
 -1,"Dropper (Facing West, Unactive)",minecraft:dropper,facing,west,,,,
 1267,"Dropper (Facing South, Unactive)",minecraft:dropper,facing,south,,,,
@@ -306,12 +306,12 @@
 -1,Emerald Ore,minecraft:emerald_ore,,,,,,
 190,Enchantment Table,minecraft:enchanting_table,,,,,,
 -1,End Portal,minecraft:end_portal,,,,,,
--1,"End Portal Frame (Vectors to the East, Empty)",minecraft:end_portal_frame,facing,east,,,,
--1,"End Portal Frame (Vectors to the North, Empty)",minecraft:end_portal_frame,facing,north,,,,
--1,"End Portal Frame (Vectors to the West, Empty)",minecraft:end_portal_frame,facing,west,,,,
+953,"End Portal Frame (Vectors to the East, Empty)",minecraft:end_portal_frame,facing,east,,,,
+952,"End Portal Frame (Vectors to the North, Empty)",minecraft:end_portal_frame,facing,north,,,,
+951,"End Portal Frame (Vectors to the West, Empty)",minecraft:end_portal_frame,facing,west,,,,
 957,"End Portal Frame (Vectors to the East, Eye of Ender)",minecraft:end_portal_frame,facing,east,eye,true,,
 956,"End Portal Frame (Vectors to the North, Eye of Ender)",minecraft:end_portal_frame,facing,north,eye,true,,
--1,"End Portal Frame (Vectors to the South, Empty)",minecraft:end_portal_frame,facing,south,,,,
+194,"End Portal Frame (Vectors to the South, Empty)",minecraft:end_portal_frame,facing,south,,,,
 954,"End Portal Frame (Vectors to the South, Eye of Ender)",minecraft:end_portal_frame,facing,south,eye,true,,
 -1,"End Portal Frame (Vectors to the West, Eye of Ender)",minecraft:end_portal_frame,facing,west,eye,true,,
 1693,End Rod (Facing Down),minecraft:end_rod,facing,down,,,,
@@ -323,7 +323,7 @@
 195,End Stone,minecraft:end_stone,,,,,,
 -1,End Stone Bricks,minecraft:end_stone_bricks,,,,,,
 949,Ender Chest (Facing East),minecraft:ender_chest,facing,east,,,,
--1,Ender Chest (Facing North),minecraft:ender_chest,facing,north,,,,
+946,Ender Chest (Facing North),minecraft:ender_chest,facing,north,,,,
 947,Ender Chest (Facing South),minecraft:ender_chest,facing,south,,,,
 948,Ender Chest (Facing West),minecraft:ender_chest,facing,west,,,,
 108,Farmland (Dry Land),minecraft:farmland,moisture,0,,,,
@@ -402,8 +402,8 @@
 462,"Iron Door (Lower, Facing East, Opened)",minecraft:iron_door,facing,west,open,true,half,lower
 461,"Iron Door (Lower, Facing North, Opened)",minecraft:iron_door,facing,south,open,true,half,lower
 459,"Iron Door (Lower, Facing South, Closed)",minecraft:iron_door,facing,north,open,false,half,lower
--1,"Iron Door (Lower, Facing South, Opened)",minecraft:iron_door,facing,north,open,true,half,lower
--1,"Iron Door (Lower, Facing West, Opened)",minecraft:iron_door,facing,east,open,true,half,lower
+463,"Iron Door (Lower, Facing South, Opened)",minecraft:iron_door,facing,north,open,true,half,lower
+460,"Iron Door (Lower, Facing West, Opened)",minecraft:iron_door,facing,east,open,true,half,lower
 466,"Iron Door (Upper, Hinge Left, Powered)",minecraft:iron_door,hinge,left,powered,true,half,upper
 467,"Iron Door (Upper, Hinge Right, Powered)",minecraft:iron_door,hinge,right,powered,true,half,upper
 458,"Iron Door (Lower, Facing East, Closed)",minecraft:iron_door,facing,west,open,false,half,lower
@@ -411,7 +411,7 @@
 457,"Iron Door (Lower, Facing North, Closed)",minecraft:iron_door,facing,south,open,false,half,lower
 465,"Iron Door (Upper, Hinge Right, Unpowered)",minecraft:iron_door,hinge,right,powered,false,half,upper
 464,"Iron Door (Upper, Hinge Left, Unpowered)",minecraft:iron_door,hinge,left,powered,false,half,upper
--1,Iron Ore,minecraft:iron_ore,,,,,,
+45,Iron Ore,minecraft:iron_ore,,,,,,
 -1,"Iron Trapdoor (East from block, Closed, Bottom half)",minecraft:iron_trapdoor,half,bottom,facing,west,open,false
 891,"Iron Trapdoor (East from block, Closed, Top Half)",minecraft:iron_trapdoor,half,top,facing,west,open,false
 -1,"Iron Trapdoor (East from block, Open, Bottom half)",minecraft:iron_trapdoor,half,bottom,facing,west,open,true
@@ -514,7 +514,7 @@
 268,Light Gray Stained Glass Pane,minecraft:light_gray_stained_glass_pane,,,,,,
 252,Light Gray Stained Clay,minecraft:light_gray_terracotta,,,,,,
 67,Light Gray Wool,minecraft:light_gray_wool,,,,,,
--1,Weighted Pressure Plate (light),minecraft:light_weighted_pressure_plate,,,,,,
+234,Weighted Pressure Plate (light),minecraft:light_weighted_pressure_plate,,,,,,
 917,"Flower (Lilac, Lower)",minecraft:lilac,half,lower,,,,
 924,"Flower (Lilac, Upper)",minecraft:lilac,half,upper,,,,
 185,Lily Pad,minecraft:lily_pad,,,,,,
@@ -556,7 +556,7 @@
 186,Nether Brick,minecraft:nether_bricks,,,,,,
 -1,Nether Portal (Axis X - Oriented East-West),minecraft:nether_portal,axis,x,,,,
 1084,Nether Portal (Axis Z - Oriented North-South),minecraft:nether_portal,axis,z,,,,
--1,Nether Quartz Ore,minecraft:nether_quartz_ore,,,,,,
+240,Nether Quartz Ore,minecraft:nether_quartz_ore,,,,,,
 -1,Nether Wart (),minecraft:nether_wart,,,,,,
 -1,Nether Wart Block,minecraft:nether_wart_block,,,,,,
 135,Netherrack,minecraft:netherrack,,,,,,
@@ -658,7 +658,7 @@
 1186,Orange Tulip,minecraft:orange_tulip,,,,,,
 62,Orange Wool,minecraft:orange_wool,,,,,,
 285,Oxeye Daisy,minecraft:oxeye_daisy,,,,,,
--1,Packed Ice,minecraft:packed_ice,,,,,,
+1652,Packed Ice,minecraft:packed_ice,,,,,,
 921,"Flower (Peony, Lower)",minecraft:peony,half,lower,,,,
 1102,Pink Carpet,minecraft:pink_carpet,,,,,,
 -1,Pink Stained Glass,minecraft:pink_stained_glass,,,,,,
@@ -693,7 +693,7 @@
 687,"Piston (6-sided piston2, Extended)",minecraft:piston,facing,up,,,,
 -1,"Piston Extension (Facing up, Extended)",minecraft:piston_head,facing,up,extended,true,,
 -1,"Piston Extension (Facing up, Not Extended)",minecraft:piston_head,facing,up,,,,
--1,"Piston Extension (Facing down, Not Extended)",minecraft:piston_head,facing,down,,,,
+1157,"Piston Extension (Facing down, Not Extended)",minecraft:piston_head,facing,down,,,,
 -1,Mob Head (),minecraft:player_head,,,,,,
 1425,Mob Head (On a Wall Facing East),minecraft:player_wall_head,facing,west,,,,
 1423,Mob Head (On a Wall Facing North),minecraft:player_wall_head,facing,south,,,,
@@ -713,7 +713,7 @@
 -1,Potatoes (Growth level 5),minecraft:potatoes,age,5,,,,
 -1,Potatoes (Growth level 6),minecraft:potatoes,age,6,,,,
 1524,Potatoes (Growth level 7),minecraft:potatoes,age,7,,,,
--1,Acacia sapling Flower Pot,minecraft:potted_acacia_sapling,,,,,,
+344,Acacia sapling Flower Pot,minecraft:potted_acacia_sapling,,,,,,
 337,Birch sapling Flower Pot,minecraft:potted_birch_sapling,,,,,,
 340,Brown mushroom Flower Pot,minecraft:potted_brown_mushroom,,,,,,
 341,Cactus Flower Pot,minecraft:potted_cactus,,,,,,
@@ -729,8 +729,8 @@
 1297,"Powered Rail (Flat North-South, Not Active)",minecraft:powered_rail,shape,north_south,,,,
 -1,"Powered Rail (Flat West-East, Active)",minecraft:powered_rail,shape,east_west,powered,true,,
 1298,"Powered Rail (Flat West-East, Not Active)",minecraft:powered_rail,shape,east_west,,,,
--1,"Powered Rail (Sloped, Ascending to the East, Not Active)",minecraft:powered_rail,shape,ascending_east,,,,
--1,"Powered Rail (Sloped, Ascending to the West, Not Active)",minecraft:powered_rail,shape,ascending_west,,,,
+1299,"Powered Rail (Sloped, Ascending to the East, Not Active)",minecraft:powered_rail,shape,ascending_east,,,,
+1300,"Powered Rail (Sloped, Ascending to the West, Not Active)",minecraft:powered_rail,shape,ascending_west,,,,
 -1,Prismarine,minecraft:prismarine,,,,,,
 -1,Prismarine Bricks,minecraft:prismarine_bricks,,,,,,
 1091,Pumpkin (Facing North),minecraft:pumpkin,facing,north,,,,
@@ -841,24 +841,24 @@
 731,Redstone Wire (Power:8),minecraft:redstone_wire,,,,,,
 732,Redstone Wire (Power:9),minecraft:redstone_wire,,,,,,
 802,"Redstone Repeater Block (off) (Facing East, Delay of 1 tick)",minecraft:repeater,facing,west,delay,1,,
--1,"Redstone Repeater Block (off) (Facing East, Delay of 2 ticks",minecraft:repeater,facing,west,delay,2,,
--1,"Redstone Repeater Block (off) (Facing East, Delay of 3 ticks",minecraft:repeater,facing,west,delay,3,,
+806,"Redstone Repeater Block (off) (Facing East, Delay of 2 ticks",minecraft:repeater,facing,west,delay,2,,
+810,"Redstone Repeater Block (off) (Facing East, Delay of 3 ticks",minecraft:repeater,facing,west,delay,3,,
 814,"Redstone Repeater Block (off) (Facing East, Delay of 4 ticks",minecraft:repeater,facing,west,delay,4,,
 143,"Redstone Repeater Block (off) (Facing North, Delay of 1 tick",minecraft:repeater,facing,south,delay,1,,
 -1,"Redstone Repeater Block (off) (Facing North, Delay of 2 tick",minecraft:repeater,facing,south,delay,2,,
--1,"Redstone Repeater Block (off) (Facing North, Delay of 3 tick",minecraft:repeater,facing,south,delay,3,,
+809,"Redstone Repeater Block (off) (Facing North, Delay of 3 tick",minecraft:repeater,facing,south,delay,3,,
 813,"Redstone Repeater Block (off) (Facing North, Delay of 4 tick",minecraft:repeater,facing,south,delay,4,,
 803,"Redstone Repeater Block (off) (Facing South, Delay of 1 tick",minecraft:repeater,facing,north,delay,1,,
--1,"Redstone Repeater Block (off) (Facing South, Delay of 2 tick",minecraft:repeater,facing,north,delay,2,,
+807,"Redstone Repeater Block (off) (Facing South, Delay of 2 tick",minecraft:repeater,facing,north,delay,2,,
 811,"Redstone Repeater Block (off) (Facing South, Delay of 3 tick",minecraft:repeater,facing,north,delay,3,,
 815,"Redstone Repeater Block (off) (Facing South, Delay of 4 tick",minecraft:repeater,facing,north,delay,4,,
 804,"Redstone Repeater Block (off) (Facing West, Delay of 1 tick)",minecraft:repeater,facing,east,delay,1,,
 -1,"Redstone Repeater Block (off) (Facing West, Delay of 2 ticks",minecraft:repeater,facing,east,delay,2,,
--1,"Redstone Repeater Block (off) (Facing West, Delay of 3 ticks",minecraft:repeater,facing,east,delay,3,,
+812,"Redstone Repeater Block (off) (Facing West, Delay of 3 ticks",minecraft:repeater,facing,east,delay,3,,
 816,"Redstone Repeater Block (off) (Facing West, Delay of 4 ticks",minecraft:repeater,facing,east,delay,4,,
 -1,"Redstone Repeater Block (on) (Facing East, Delay of 1 tick)",minecraft:repeater,facing,west,delay,1,powered,true
 -1,"Redstone Repeater Block (on) (Facing East, Delay of 3 ticks)",minecraft:repeater,facing,west,delay,3,powered,true
--1,"Redstone Repeater Block (on) (Facing East, Delay of 4 ticks)",minecraft:repeater,facing,west,delay,4,powered,true
+798,"Redstone Repeater Block (on) (Facing East, Delay of 4 ticks)",minecraft:repeater,facing,west,delay,4,powered,true
 144,"Redstone Repeater Block (on) (Facing North, Delay of 1 tick)",minecraft:repeater,facing,south,delay,1,powered,true
 -1,"Redstone Repeater Block (on) (Facing North, Delay of 2 ticks",minecraft:repeater,facing,south,delay,2,powered,true
 -1,"Redstone Repeater Block (on) (Facing North, Delay of 3 ticks",minecraft:repeater,facing,south,delay,3,powered,true
@@ -942,7 +942,7 @@
 30,Spruce Wood,minecraft:spruce_log,axis,y,,,,
 430,Spruce wood (facing east/west),minecraft:spruce_log,axis,x,,,,
 433,Spruce Wood (facing north/south),minecraft:spruce_log,axis,z,,,,
--1,Spruce Wood (only bark),minecraft:spruce_wood,,,,,,
+436,Spruce Wood (only bark),minecraft:spruce_wood,,,,,,
 -1,"Sticky Piston (Facing down, Extended)",minecraft:sticky_piston,facing,down,extended,true,,
 -1,"Sticky Piston (Facing down, Not Extended)",minecraft:sticky_piston,facing,down,extended,false,,
 -1,"Sticky Piston (Facing east, Extended)",minecraft:sticky_piston,facing,east,extended,true,,
@@ -1000,7 +1000,7 @@
 923,"Flower (Sunflower, Upper)",minecraft:sunflower,half,upper,,,,
 918,"Flower (Double Tallgrass, Lower)",minecraft:tall_grass,half,lower,,,,
 925,"Flower (Double Tallgrass, Upper)",minecraft:tall_grass,half,upper,,,,
--1,Hardened Clay,minecraft:terracotta,,,,,,
+425,Hardened Clay,minecraft:terracotta,,,,,,
 94,TNT,minecraft:tnt,,,,,,
 446,Torch (Facing East),minecraft:wall_torch,facing,east,,,,
 449,Torch (Facing North),minecraft:wall_torch,facing,north,,,,
